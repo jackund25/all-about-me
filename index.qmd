@@ -1,22 +1,24 @@
-# Selamat Berjumpa {.unnumbered}
+# Selamat Datang {.unnumbered}
 
-![About Me](images/AZRL.png){width=950%}
+![About Me](../images/DAFFARI.jpg){width=100%, style="max-width:450px; border-radius:15px; display:block; margin:auto;"}
 
-Armein Z R Langi adalah Guru Besar di Sekolah Teknik Elektro dan Informatika ITB, dosen ITB sejak Desember 1987, mantan Rektor Universitas Kristen Maranatha, 1 Maret 2016 s/d 29 Februari 2020, mantan Kepala Pusat Penelitian Teknologi Informasi dan Komunikasi (PP-TIK) ITB November 2005 s/d Maret 2010, dan Sekretaris MWA ITB Mei 2010-Jan 2011.
+Halo! Saya **Daffari Adiyatma**, mahasiswa **S1 Sistem dan Teknologi Informasi – Institut Teknologi Bandung**, angkatan 2022.  
+Saya lahir di Padang dan tumbuh di tengah keluarga yang menghargai logika, kemandirian, dan kehangatan.  
+Saya percaya bahwa hidup adalah perjalanan memahami — bukan hanya dunia, tapi juga diri sendiri.
 
-Lahir di Tomohon 1962 dari pasangan Manado dan Sunda. Saat ini tinggal di Bandung, menikah dengan Ina dan dikaruniai empat anak. Ayah dari Gladys, Kezia, Andria, dan Marco.
+Di kampus, saya sering disebut “orang logis yang suka bercanda.”  
+Mungkin benar. Saya menyukai argumen sehat, berpikir kritis, tapi juga menghargai sisi manusiawi dari setiap percakapan.  
+Bagi saya, komunikasi yang baik tidak sekadar soal berbicara, melainkan **bagaimana kata-kata bisa membawa empati dan makna.**
 
-Sharing pikiran singkat ada di blog <https://azrl.wordpress.com>. Facebookk: armein_langi
+Website ini berisi rangkaian refleksi dan karya dari mata kuliah  
+**Komunikasi Interpersonal dan Publik (II2100)**.  
+Setiap halaman bukan sekadar tugas, tapi juga cermin perjalanan saya dalam menyeimbangkan **akal, rasa, dan nilai**.  
+Mulai dari menulis tentang diri sendiri, mencipta lagu, bercerita, hingga mengenal bentuk karakter pribadi.
 
-Andria, putri saya, lumayan sering membaca blog ini.  Dia juga sumber inspirasi tulisan saya.  Dia senang menceritakan jokes pada saya, dan kalau bagus saya tulis di sini, terutama seri Kocak Ala Andria.  Dan dia suka heran, karena isinya sudah berbeda.  Memang saya senang mengubah-ngubah cerita karena saya tidak suka menjiplak mentah-mentah.  Minggu lalu tidak sengaja dia memuji tulisan blog ini.
+> “Keadilan memberi arah, kebijaksanaan memberi batas, empati memberi makna, dan keberanian memberi jalan.”
 
+Terima kasih sudah berkunjung.  
+Semoga dari halaman ini, kamu tidak hanya mengenal siapa saya,  
+tetapi juga menemukan sedikit inspirasi untuk lebih mengenal **diri kamu sendiri.**
 
-“Papa… papa… “, tanyanya, “Tulisan blog papa itu copy-paste dari tulisan orang ya…?”
-
-Haa? Ya nggak mungkin lah.  Kecuali lirik lagu, semua artikel di sini ditulis sendiri.
-
-“Ah bohong, soalnya tulisannya terlalu banyak….” katanya tetap tidak percaya, “Nggak mungkinlah papa tulis sendiri…”
-
-Hehe, saya tersenyum sambil membelai Andria, karena buat saya itu adalah ultimate compliment.  Thanks sweetheart…
-
-Jadi kalau orang tidak percaya bahwa sesuatu itu karya anda, anda yang buat, jangan marah.  Itu adalah pujian yang sejati.
+— **Daffari**
