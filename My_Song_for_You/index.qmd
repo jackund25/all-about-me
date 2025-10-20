@@ -12,30 +12,49 @@ execute:
 # **UTS-2 Songs for You – “In the quiet hall I stand alone”**
 
 **Lyrics:** Daffari Adiyatma  
-**Music:** SUNO AI (日本語–English Hybrid Ballad)  
+**Music:** SUNO AI (日本語–English)  
 
-{{< audio src="./Ballad_of_the_Quiet_Crown_STYXHELIX_Full.mp3" >}}
+## 🎥 Listen to “In the Quiet Hall I Stand Alone”
+
+<iframe 
+  width="700" 
+  height="394" 
+  src="https://www.youtube.com/embed/epQNuSIteKw" 
+  title="In the Quiet Hall I Stand Alone – Daffari Adiyatma" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+
+> *Video ini menggambarkan perjalanan sunyi namun penuh makna — tentang keteguhan, harapan, dan suara hati yang tetap bernyanyi di tengah sepi.*
 
 ---
 
-## **Lyrics**
+## 🎵 Lyrics – *In the Quiet Hall I Stand Alone*
+
+---
 
 ### [Verse 1]
 In the quiet hall I stand alone  
-Waiting for the dawn to rise again
+Waiting for the dawn to rise again  
 The fire inside won’t fade away  
 Even if the world forgets my name  
 
 ただ彷徨う想いの中  
 *Tada samayou omoi no naka*  
+→ In these wandering thoughts  
+
 壊れた夢の欠片を胸に  
 *Kowareta yume no kakera o mune ni*  
+→ Holding the fragments of broken dreams within my heart  
+
 それでも僕は道を選ぶ  
 *Soredemo boku wa michi o erabu*  
+→ Still, I choose my path  
+
 君へと続く光を信じて  
 *Kimi e to tsuzuku hikari o shinjite*  
-
----
+→ Believing in the light that leads to you  
 
 ### [Chorus]
 I wear no crown but I still reign  
@@ -45,14 +64,19 @@ The Quiet Crown — I’m standing now
 
 君の声が届くなら  
 *Kimi no koe ga todoku nara*  
+→ If your voice could reach me  
+
 もう一度願いを繋いで  
 *Mou ichido negai o tsunaide*  
+→ I would hold our wishes together once more  
+
 怖くない　闇の先に  
 *Kowakunai, yami no saki ni*  
+→ I’m not afraid, beyond the darkness  
+
 希望があるから  
 *Kibou ga aru kara*  
-
----
+→ Because there is still hope  
 
 ### [Verse 2]
 The weight of truth, it never fades  
@@ -62,14 +86,19 @@ I’ll fight for what remains unseen
 
 消えない記憶に震える  
 *Kienai kioku ni furueru*  
+→ Trembling in the unerasable memories  
+
 涙は今も温かい  
 *Namida wa ima mo atatakai*  
+→ My tears are still warm even now  
+
 叫びは風に溶けていく  
 *Sakebi wa kaze ni tokete iku*  
+→ My cries dissolve into the wind  
+
 ただ君に届けたい  
 *Tada kimi ni todoketai*  
-
----
+→ I just want them to reach you  
 
 ### [Bridge]
 Even if the night consumes my soul  
@@ -79,14 +108,19 @@ The echoes whisper through my chest
 
 怖くないよ　一人じゃない  
 *Kowakunai yo, hitori ja nai*  
+→ I’m not afraid — I’m not alone  
+
 この命は嘘じゃない  
 *Kono inochi wa uso janai*  
+→ This life is no lie  
+
 傷ついても守りたい  
 *Kizutsuite mo mamoritai*  
+→ Even if I get hurt, I want to protect  
+
 君がいる世界を  
 *Kimi ga iru sekai o*  
-
----
+→ The world where you exist  
 
 ### [Final Chorus]
 I wear no crown but I still reign  
@@ -96,18 +130,24 @@ The Quiet Crown — my heart resounds
 
 君と見たあの空に  
 *Kimi to mita ano sora ni*  
+→ Beneath that sky we once saw together  
+
 約束の日はまた昇る  
 *Yakusoku no hi wa mata noboru*  
+→ The promised day will rise again  
+
 この声は永遠に  
 *Kono koe wa eien ni*  
+→ This voice will echo forever  
+
 君へと響くから  
 *Kimi e to hibiku kara*  
-
----
+→ Because it resounds toward you  
 
 ### [Outro]
 A crown of thought, a realm of peace,  
 My reign begins where wars shall cease.  
+
 
 ---
 
