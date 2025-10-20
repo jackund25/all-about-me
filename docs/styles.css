@@ -123,3 +123,42 @@ iframe {
   }
 }
 
+/* === Image Styling for Stories === */
+.quarto-figure img {
+  width: 80%;
+  max-width: 750px;
+  margin: 25px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.quarto-figure img:hover {
+  transform: scale(1.03);
+}
+
+/* === Make Navbar Sticky (Always Visible) === */
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(0, 74, 173, 0.95) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: background 0.3s ease;
+}
+
+/* Disable Headroom hide-on-scroll behavior */
+.headroom--unpinned,
+.headroom--pinned,
+.headroom--not-top,
+.headroom--top {
+  transform: none !important;
+  transition: none !important;
+}
+
+body {
+  padding-top: 100px !important; /* ubah dari 70px ke 100px */
+}
