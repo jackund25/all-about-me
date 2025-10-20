@@ -1,6 +1,6 @@
 # **UTS-1 All About Me**
 
-![About Me](../images/DAFFARI.png){width=950%}
+![About Me](../images/DAFFARI.jpg){width=950%}
 
 **Daffari Adiyatma** adalah mahasiswa **S1 Sistem dan Teknologi Informasi, Institut Teknologi Bandung**, angkatan 2022.  
 Lahir di **Padang, Sumatra Barat (25 Juli 2004)** dan memiliki akar keluarga di **Bukittinggi** dengan darah **Minang–Jawa**.  
