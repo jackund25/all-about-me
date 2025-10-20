@@ -2,30 +2,38 @@ project:
   type: website
   output-dir: docs
 
-book:
-  title: "Daffari Adiyatma"
-  subtitle: "Portfolio Asesmen II-2100 KIPP"
-  author: "18222003 Daffari Adiyatma"
-  date: "10/20/2025"
-  chapters:
-    - index.qmd
-    - All_About_me/index.qmd
-    - My_Song_for_You/index.qmd
-    - My_Stories_for_You/index.qmd
-    - My_Shapes/index.qmd
-    - My_Personal_Reviews/index.qmd
-    - My_Concepts/index.qmd
-    - My_Opinions/index.qmd
-    - My_Innovations/index.qmd
-    - My_Knowledge/index.qmd
-    - My_Professional_Reviews/index.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+website:
+  title: "Daffari Adiyatma — All About Me"
+  description: "Portfolio Asesmen II-2100 KIPP - Institut Teknologi Bandung"
+  site-url: https://daffari.github.io/all-about-me/
+  navbar:
+    left:
+      - href: All_About_me/index.qmd
+        text: UTS-1 All About Me
+      - href: My_Song_for_You/index.qmd
+        text: UTS-2 Song for You
+      - href: My_Stories_for_You/index.qmd
+        text: UTS-3 My Stories for You
+      - href: My_Shapes/index.qmd
+        text: UTS-4 My Shape
+      - href: My_Personal_Reviews/index.qmd
+        text: UTS-5 My Personal Reviews
+      - text: "UAS"
+        menu:
+          - href: My_Concepts/index.qmd
+            text: My Concepts
+          - href: My_Opinions/index.qmd
+            text: My Opinions
+          - href: My_Innovations/index.qmd
+            text: My Innovations
+          - href: My_Knowledge/index.qmd
+            text: My Knowledge
+          - href: My_Professional_Reviews/index.qmd
+            text: My Professional Reviews
+  page-navigation: true
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
+    css: styles.css
+    toc: true

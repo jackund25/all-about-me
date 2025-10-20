@@ -1,3 +1,14 @@
+---
+title: "UTS-1 All About Me"
+author: "Daffari Adiyatma"
+format: html
+toc: true
+toc-depth: 3
+number-sections: false
+execute:
+  echo: false
+---
+
 # **UTS-1 All About Me**
 
 ![About Me](../images/DAFFARI.jpg){width=950%}
@@ -7,7 +18,7 @@ Lahir di **Padang, Sumatra Barat (25 Juli 2004)** dan memiliki akar keluarga di 
 Ia tumbuh dalam keluarga yang menjunjung **kebebasan dalam menentukan pilihan, pentingnya pendidikan, dan nilai kekeluargaan**.
 
 Saat ini Daffari tinggal di Bandung untuk menempuh studi. Ia adalah **anak pertama dari tiga bersaudara**, sosok yang dikenal logis, analitis, dan memiliki rasa keadilan yang kuat.  
-Di luar dunia akademik, ia menikmati **membaca, menonton, bermain musik, dan game**, yang bagi dirinya bukan sekadar hiburan, melainkan juga sumber inspirasi moral dan refleksi diri.
+Di luar dunia akademik, ia menikmati **membaca, menonton, bermain musik, dan game** — bukan sekadar hiburan, tapi juga *riset moral terselubung* (setidaknya begitu saya bilang ke diri sendiri tiap kali main terlalu lama).
 
 LinkedIn : [daffari-adiyatma](https://www.linkedin.com/in/daffari-adiyatma-092874255/)  
 Instagram: [\@dapp._25](https://www.instagram.com/dapp._25/)
@@ -22,7 +33,8 @@ Bagi saya, cerita adalah cara untuk memahami hidup. Sejak kecil, saya tumbuh ber
 Saya selalu percaya bahwa **keadilan adalah kunci kebahagiaan bagi komunitas**. Sebab tanpa keadilan, tidak akan ada kepercayaan; dan tanpa kepercayaan, tidak ada yang bisa dibangun bersama.  
 Namun di sisi lain, saya juga seorang **realistis**. Saya membaca *The Prince* karya Machiavelli dan justru belajar sisi positifnya: **bahwa kekuasaan tanpa moral adalah bencana, tapi moral tanpa realisme adalah kelemahan.**
 
-Dalam keseharian, saya tidak menganggap dunia hitam dan putih — lebih sering abu-abu. Tapi dalam ruang abu-abu itulah nilai seseorang diuji: apakah tetap teguh pada prinsip, atau hanyut dalam kepentingan sesaat.
+Dalam keseharian, saya tidak menganggap dunia hitam dan putih — lebih sering abu-abu. Tapi dalam ruang abu-abu itulah nilai seseorang diuji: apakah tetap teguh pada prinsip, atau hanyut dalam kepentingan sesaat.  
+(Saya sendiri kadang ikut hanyut, terutama kalau sudah masuk diskon Steam Autumn Sale — manusiawi lah, ya.)
 
 ---
 
@@ -40,7 +52,8 @@ Berhadapan dengannya dalam sejarah adalah **Salahuddin Al-Ayyubi**, simbol lain 
 Salahuddin memperlihatkan bahwa *iman dan kemanusiaan dapat berjalan beriringan tanpa saling meniadakan.*
 
 Sementara **Lelouch vi Britannia** mengingatkan saya akan kenyataan bahwa setiap keputusan besar membawa harga yang harus dibayar. Ia memahami bahwa dunia sering kali bergerak bukan karena kebenaran, melainkan karena persepsi.  
-Lelouch melambangkan keberanian dalam mengambil keputusan sulit — dan kesadaran bahwa pengorbanan sering kali menjadi bentuk keadilan terakhir yang tersisa.
+Lelouch melambangkan keberanian dalam mengambil keputusan sulit — dan kesadaran bahwa pengorbanan sering kali menjadi bentuk keadilan terakhir yang tersisa.  
+(Seandainya saja dunia nyata juga punya tombol “Re:Zero” untuk mengulang keputusan, pasti hidup lebih tenang — tapi ya, tidak seseru itu kehidupan mahasiswa.)
 
 Empat sosok ini bukanlah idola, melainkan *cermin filosofis* bagi empat pilar kepribadian yang saya pegang:
 
@@ -63,7 +76,8 @@ Dalam kerangka teori *self-concept* dan *identitas naratif* (McAdams, 1993) seba
 3. **Identitas naratif (narrative identity)** — kisah hidup yang saya bangun untuk memaknai siapa saya dan mengapa saya bertindak demikian.
 
 Ketiga lapisan ini berpadu dalam satu prinsip: **menjadi rasional tanpa kehilangan rasa kemanusiaan.**  
-Saya berusaha menjadi seseorang yang tidak hanya berpikir dengan kepala, tetapi juga dengan hati yang tahu kapan harus berhenti berdebat dan mulai memahami.
+Saya berusaha menjadi seseorang yang tidak hanya berpikir dengan kepala, tetapi juga dengan hati yang tahu kapan harus berhenti berdebat dan mulai memahami.  
+(Karena kadang, menang argumen itu kalah waktu — apalagi kalau sudah lewat jam 1 pagi dan teman sekamar mau tidur.)
 
 ---
 
@@ -83,7 +97,8 @@ Di situlah letak *agensi diri* saya: dalam kesadaran untuk tetap menjadi diri se
 Saya mungkin bukan pencerita ulung, tetapi saya paham bahwa setiap keputusan adalah bab dalam buku hidup yang saya tulis sendiri.  
 Saya memilih untuk menjalani hidup dengan logika sebagai panduan, nilai sebagai jangkar, dan keberanian sebagai tinta yang menulis perjalanan itu.
 
-> **Saya ingin dikenal sebagai seseorang yang berpikir dengan kepala, bertindak dengan hati, dan berdiri di atas keadilan, bahkan ketika sendirian.**
+> **Saya ingin dikenal sebagai seseorang yang berpikir dengan kepala, bertindak dengan hati, dan berdiri di atas keadilan, bahkan ketika sendirian.**  
+> Dan kalaupun dunia belum adil, semoga setidaknya kopi pagi saya tetap manis di tengah semua kepahitan hidup.
 
 ---
 

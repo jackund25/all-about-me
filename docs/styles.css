@@ -1,0 +1,107 @@
+/* === GLOBAL STYLING FOR DAFFARI WEBSITE === */
+
+/* Font dan warna dasar */
+body {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: #2b2b2b;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Warna utama & aksen */
+:root {
+  --primary-color: #004aad;
+  --accent-color: #0074e4;
+  --light-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Quarto */
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 1.8em;
+}
+
+/* Link */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Gambar dan figure */
+.quarto-figure img {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.quarto-figure img:hover {
+  transform: scale(1.03);
+}
+
+/* Card-like sections */
+section, .content {
+  background: var(--light-bg);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 25px var(--shadow);
+}
+
+/* TOC sidebar */
+#TOC {
+  background: #f3f7fd;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #555;
+  padding: 25px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  background: #f9fbff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  section, .content {
+    padding: 15px 18px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
