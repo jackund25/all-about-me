@@ -123,3 +123,17 @@ iframe {
   }
 }
 
+/* === Image Styling for Stories === */
+.quarto-figure img {
+  width: 80%;
+  max-width: 750px;
+  margin: 25px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.quarto-figure img:hover {
+  transform: scale(1.03);
+}

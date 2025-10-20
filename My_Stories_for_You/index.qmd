@@ -15,6 +15,8 @@ execute:
 
 ## **Kisah 1 — Pembuktian Sang Medioker (Pengalaman Nyata)**
 
+![SMAN 1 Padang](../images/SMAN1.jpg){width=80% fig-align="center"}
+
 Waktu itu saya masih di SMAN 1 Padang.  
 Saya belum tahu pasti minat saya, hanya tahu satu hal: saya ingin masuk ke tempat terbaik.  
 Saya mencari di internet: “kampus teknik terbaik di Indonesia.”  
@@ -38,12 +40,15 @@ Kami belajar bareng, saling menyemangati, dan menertawakan soal yang sama-sama t
 
 Hari pengumuman SBMPTN akhirnya datang.  
 Hujan deras mengguyur Padang sore itu. Saya membuka laptop dengan jantung berdetak keras.  
-Begitu halaman terbuka, saya tertegun: **warna biru.**  
+Begitu halaman terbuka, saya tertegun: **warna biru.**
+
+![ITB – Kampus Impian](../images/ITB.jpg){width=80% fig-align="center"}
+
 Kalimat yang muncul di layar:  
 > “Selamat, Anda dinyatakan lulus SBMPTN di Institut Teknologi Bandung – STEI-Komputasi.”  
 
 Saya sempat diam lima menit, tidak percaya. Lalu tiba-tiba melompat, sujud syukur, dan berteriak:  
-> “Ma, siap-siap packing, kita ke Bandung!”  
+> “Ma, siap-siap packing, kita ke Bandung!”
 
 Rasanya luar biasa. Saya satu-satunya dari sekolah yang lolos ke STEI-K lewat SBMPTN.  
 Beberapa hari setelah itu, saya merasa *unbeatable*.  
@@ -62,6 +67,8 @@ Dan dari situ, saya belajar bahwa **percaya diri bukan berarti merasa hebat, tap
 ---
 
 ## **Kisah 2 — Di Antara Pedang dan Pikiran (Fiksi)**
+
+![KNIGHT](../images/KNIGHT.jpeg){width=80% fig-align="center"}
 
 Di sebuah kerajaan yang dilanda perang panjang,  
 hidup seorang ksatria muda bernama **Aiden**, murid termuda di pasukan kerajaan.  
