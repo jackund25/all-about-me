@@ -1,6 +1,6 @@
 # Selamat Datang {.unnumbered}
 
-![About Me](../images/DAFFARI.jpg){width=100%, style="max-width:450px; border-radius:15px; display:block; margin:auto;"}
+![About Me](./images/DAFFARI.jpg){width=100%, style="max-width:450px; border-radius:15px; display:block; margin:auto;"}
 
 Halo! Saya **Daffari Adiyatma**, mahasiswa **S1 Sistem dan Teknologi Informasi – Institut Teknologi Bandung**, angkatan 2022.  
 Saya lahir di Padang dan tumbuh di tengah keluarga yang menghargai logika, kemandirian, dan kehangatan.  
