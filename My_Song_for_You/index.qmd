@@ -1,8 +1,18 @@
+---
+title: "UTS-2 Songs for You – In the quiet hall I stand alone"
+author: "Daffari Adiyatma"
+format: html
+toc: true
+toc-depth: 3
+number-sections: false
+execute:
+  echo: false
+---
+
 # **UTS-2 Songs for You – “In the quiet hall I stand alone”**
 
 **Lyrics:** Daffari Adiyatma  
 **Music:** SUNO AI (日本語–English Hybrid Ballad)  
-**Style:** STYX HELIX-inspired Cinematic Ballad  
 
 {{< audio src="./Ballad_of_the_Quiet_Crown_STYXHELIX_Full.mp3" >}}
 
@@ -10,7 +20,7 @@
 
 ## **Lyrics**
 
-[Verse 1]  
+### [Verse 1]
 In the quiet hall I stand alone  
 Waiting for the dawn to rise again  
 The fire inside won’t fade away  
@@ -27,7 +37,7 @@ Even if the world forgets my name
 
 ---
 
-[Chorus]  
+### [Chorus]
 I wear no crown but I still reign  
 Through storm and pain I guard my vow  
 This silent world will hear my sound  
@@ -44,7 +54,7 @@ The Quiet Crown — I’m standing now
 
 ---
 
-[Verse 2]  
+### [Verse 2]
 The weight of truth, it never fades  
 Scars remind me why I stayed  
 Beneath the sky of broken dreams  
@@ -61,7 +71,7 @@ I’ll fight for what remains unseen
 
 ---
 
-[Bridge]  
+### [Bridge]
 Even if the night consumes my soul  
 I’ll burn until I find control  
 The echoes whisper through my chest  
@@ -78,7 +88,7 @@ The echoes whisper through my chest
 
 ---
 
-[Final Chorus]  
+### [Final Chorus]
 I wear no crown but I still reign  
 Even when everything turns to pain  
 Through fire and rain I’ll hold my ground  
@@ -95,8 +105,38 @@ The Quiet Crown — my heart resounds
 
 ---
 
-[Outro]  
+### [Outro]
 A crown of thought, a realm of peace,  
 My reign begins where wars shall cease.  
 
 ---
+
+## **Refleksi Konseptual — Komunikasi Emosional dan Nilai Personal**
+
+Lagu ini saya tulis sebagai cara untuk menyampaikan perasaan yang sulit diungkapkan secara langsung.  
+Kadang, ada hal-hal yang tidak bisa dijelaskan dengan kata biasa, tapi bisa tersampaikan lewat nada dan irama.  
+“In the quiet hall I stand alone” bukan kisah tentang kesedihan, tetapi tentang **belajar tenang di tengah sepi**,  
+dan menemukan kekuatan untuk tetap berjalan meski tidak selalu didengar.
+
+Perpaduan bahasa Jepang dan Inggris bukan semata untuk estetika,  
+tetapi karena saya merasa dua bahasa itu mewakili dua sisi diri saya: **pikiran yang logis dan hati yang sensitif**.  
+Mungkin sedikit terkesan wibu, tapi tidak apa-apa—kadang justru dari anime dan musik Jepang  
+saya belajar bagaimana cara menyampaikan emosi dengan jujur tanpa harus berlebihan.  
+Bahasa Jepang bagi saya punya nuansa lembut yang sulit digantikan,  
+sementara bahasa Inggris memberi ruang bagi logika dan struktur.  
+Dua hal yang akhirnya berpadu di lagu ini, sama seperti saya yang berusaha menyeimbangkan akal dan rasa.
+
+Secara komunikasi interpersonal, lagu ini seperti **surat yang dikirim tanpa alamat**.  
+Bukan ditujukan untuk satu orang tertentu, tapi untuk siapapun yang pernah merasa sendiri, kehilangan,  
+atau takut tidak cukup berarti.  
+Saya ingin lagu ini menjadi pengingat bahwa *ketulusan tetap bernilai, bahkan jika tidak mendapat balasan.*
+
+Sedikit humor saya sisipkan agar cerita ini tidak terlalu berat.  
+Hidup memang sering terasa rumit, tapi kalau kita masih bisa tersenyum di tengah kelelahan,  
+itu artinya kita belum kalah.  
+Meskipun, ya... kadang senyum itu muncul sambil menatap tabungan yang menipis karena beli merch karakter favorit 😭.
+
+> **Pesan akhirnya:**  
+> Tidak semua perasaan perlu disembunyikan, dan tidak semua harus diumbar.  
+> Kadang yang terbaik adalah membiarkannya hidup di antara nada dan kata.  
+> Karena selama lagu ini masih terdengar, berarti saya — dan mungkin juga kamu — masih percaya pada sesuatu yang baik.

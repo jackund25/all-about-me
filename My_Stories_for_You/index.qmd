@@ -1,12 +1,115 @@
-# UTS-3 My Stories for You
+---
+title: "UTS-3 My Stories for You – Pembuktian Sang Medioker & Di Antara Pedang dan Pikiran"
+author: "Daffari Adiyatma"
+format: html
+toc: true
+toc-depth: 3
+number-sections: false
+execute:
+  echo: false
+---
 
-A story about my oldest daughter [Gaun Pemngantin Gladys](<https://azrl.wordpress.com/2020/07/18/gaun-pengantin-gladys/#comment-28004>)
+# **UTS-3 My Stories for You**
 
-A message to my daughter [The Child Who Learned to Walk at the Disneyland](<https://azrl.wordpress.com/2021/10/06/the-child-who-learned-to-walk-at-the-disneyland/>)
+---
 
-A story for my students [Fly Eagle Fly](<https://azrl.wordpress.com/2008/04/21/fly-my-eagle-fly/>)
+## **Kisah 1 — Pembuktian Sang Medioker (Pengalaman Nyata)**
 
-A (true) story for my teachers [Sang Mahaguru, Sang Mahaputera](<https://azrl.wordpress.com/2012/11/28/perginya-sang-mahaputera-dan-mahaguru-berkemeja-putih/)
+Waktu itu saya masih di SMAN 1 Padang.  
+Saya belum tahu pasti minat saya, hanya tahu satu hal: saya ingin masuk ke tempat terbaik.  
+Saya mencari di internet: “kampus teknik terbaik di Indonesia.”  
+Muncul nama **ITB**, dan di dalamnya ada jurusan **STEI-K**, katanya yang paling sulit dimasuki.  
+Tanpa banyak pikir, saya menantang diri sendiri: *kalau mau membuktikan sesuatu, sekalian saja ke puncak.*
 
-Teasing story
-{{< video https://www.youtube.com/watch?v=Dg_4PbBlBf4 >}}
+Saya sempat mencoba jalur **SNBP**, tapi gagal. Hari pengumuman saya malah demam.  
+Saat membuka web dan melihat warna merah, saya cuma menunjuk layar ke orang tua, lalu… tidur lagi wkwkwk.  
+Tapi dalam hati saya tahu: ini belum selesai.
+
+Saya lanjut ikut les SBMPTN, belajar tiap hari, walau kadang lebih sering diskusi hal tidak penting dengan teman seperjuangan.  
+Banyak orang bilang saya terlalu nekat, bahkan keluarga sendiri menyarankan,  
+> “Sudahlah, masuk ke universitas dekat saja, realistis sedikit.”  
+Tapi saya tetap maju. Saya ingin membuktikan sesuatu — bukan ke mereka, tapi ke diri saya sendiri.
+
+Satu-satunya yang benar-benar percaya pada saya adalah **ibu saya**.  
+Beliau bilang,  
+> “Kalau kamu mau, kejar. Jangan dengarkan kata orang.”  
+Dan tentu, ada juga seseorang yang terus mendorong saya belajar, meskipun saya sering malas-malasan ehee.  
+Kami belajar bareng, saling menyemangati, dan menertawakan soal yang sama-sama tidak bisa.
+
+Hari pengumuman SBMPTN akhirnya datang.  
+Hujan deras mengguyur Padang sore itu. Saya membuka laptop dengan jantung berdetak keras.  
+Begitu halaman terbuka, saya tertegun: **warna biru.**  
+Kalimat yang muncul di layar:  
+> “Selamat, Anda dinyatakan lulus SBMPTN di Institut Teknologi Bandung – STEI-Komputasi.”  
+
+Saya sempat diam lima menit, tidak percaya. Lalu tiba-tiba melompat, sujud syukur, dan berteriak:  
+> “Ma, siap-siap packing, kita ke Bandung!”  
+
+Rasanya luar biasa. Saya satu-satunya dari sekolah yang lolos ke STEI-K lewat SBMPTN.  
+Beberapa hari setelah itu, saya merasa *unbeatable*.  
+Tapi ketika benar-benar masuk ITB… realitas mulai menepuk pundak.  
+Kampusnya ternyata kecil, tapi isinya para raksasa otak.  
+Saya, si “medioker”, kini duduk di antara orang-orang yang hampir tidak pernah salah menjawab soal.  
+
+Lucunya, saya tidak minder — saya malah tertawa.  
+Karena ternyata, saya bisa berada di tempat yang dulu cuma saya lihat dari layar laptop.  
+Dan dari situ, saya belajar bahwa **percaya diri bukan berarti merasa hebat, tapi berani tetap berdiri di tengah ketidakpastian.**
+
+> **Saya menamai kisah ini: Pembuktian Sang Medioker.**  
+> Karena saya bukan yang paling jenius, tapi saya tetap berani mencoba —  
+> dan kadang, itu sudah cukup untuk menang.
+
+---
+
+## **Kisah 2 — Di Antara Pedang dan Pikiran (Fiksi)**
+
+Di sebuah kerajaan yang dilanda perang panjang,  
+hidup seorang ksatria muda bernama **Aiden**, murid termuda di pasukan kerajaan.  
+Aiden tidak punya darah bangsawan, tidak pula kekuatan luar biasa.  
+Yang ia miliki hanyalah **akal yang tajam dan hati yang gelisah.**
+
+Setiap hari ia berlatih di halaman istana. Pedangnya sering tumpul, tapi pikirannya tidak pernah diam.  
+“Untuk apa bertarung kalau yang diperjuangkan sudah tidak adil?” begitu pikirnya setiap kali melihat pertempuran.  
+
+Suatu malam, Aiden dipanggil oleh panglima tertinggi.  
+> “Kau cerdas, Aiden, tapi terlalu banyak berpikir. Di medan perang, yang dibutuhkan adalah pedang, bukan logika.”  
+Aiden menjawab pelan,  
+> “Tanpa logika, pedang hanya alat pembunuh. Dengan logika, pedang bisa menjadi alat pelindung.”  
+
+Ucapan itu membuat panglima murka.  
+Aiden diturunkan pangkatnya dan dikirim ke garis belakang untuk menjaga perbekalan.  
+Tapi justru dari sana, ia melihat hal yang tak disadari prajurit lain:  
+musuh tidak menyerang dengan pasukan, tapi dengan **strategi dan tipu daya.**
+
+Ketika pasukan utama mulai kacau, Aiden diam-diam memimpin unit kecilnya membangun benteng pertahanan di sisi timur —  
+tempat yang diabaikan semua orang karena dianggap tidak penting.  
+Dari sanalah mereka menyelamatkan seluruh pasukan dari kehancuran total.
+
+Namun setelah perang berakhir, tak ada yang menyebut nama Aiden.  
+Semua pujian diberikan kepada panglima yang sama yang dulu merendahkannya.  
+Aiden hanya tersenyum dan berkata,  
+> “Yang penting, rakyat selamat. Pedangku tak perlu bersinar jika pikiranku sudah menyala.”
+
+Bertahun-tahun kemudian, namanya baru disebut dalam catatan tua sebagai:  
+> *“Seorang ksatria tanpa mahkota, yang bertarung bukan dengan kekuatan, melainkan dengan pikiran.”*
+
+---
+
+## **Refleksi Konseptual — Komunikasi, Keberanian, dan Nilai Diri**
+
+Dua kisah ini mungkin berbeda dunia, tapi memiliki pesan yang sama:  
+**percaya pada diri sendiri, bahkan saat dunia meremehkan.**
+
+Dalam kisah nyata, saya belajar bahwa pembuktian bukan soal siapa yang paling cepat sampai,  
+tetapi siapa yang berani memulai meski semua orang bilang tidak mungkin.  
+Sementara dalam kisah fiksi, Aiden mengajarkan bahwa **logika tanpa hati melahirkan kekerasan,  
+tapi hati tanpa logika melahirkan kehancuran.**  
+
+Keduanya menggambarkan bahwa komunikasi sejati tidak hanya ada di kata-kata,  
+tetapi juga di **tindakan, keberanian, dan konsistensi nilai.**
+
+Dan seperti Aiden, saya pun merasa tidak perlu mahkota atau sorak kemenangan.  
+Cukup tahu bahwa setiap langkah — entah di ruang ujian SBMPTN, di kampus kecil bernama ITB, atau di medan hidup yang lebih luas —  
+telah saya jalani dengan pedang dan pikiran saya sendiri.
+
+> **“Kemenangan sejati bukan saat orang lain mengakui kita, tapi saat kita bisa berdamai dengan diri sendiri.”**
