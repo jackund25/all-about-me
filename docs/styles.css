@@ -162,3 +162,46 @@ iframe {
 body {
   padding-top: 100px !important; /* ubah dari 70px ke 100px */
 }
+
+/* === Responsive & readable rubric tables === */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 auto 1.25rem auto;
+}
+
+/* Make tables fixed layout so columns don't explode */
+.table-responsive table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Cells wrap text and break long words */
+.table-responsive th,
+.table-responsive td {
+  white-space: normal !important; /* allow wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  vertical-align: top;
+  padding: 0.9rem 1rem;
+}
+
+/* Improve header appearance */
+.table-responsive thead th {
+  text-align: left;
+  background: #f3f7fd;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Small screens: slightly reduce padding */
+@media (max-width: 768px) {
+  .table-responsive th,
+  .table-responsive td {
+    padding: 0.6rem 0.6rem;
+    font-size: 0.95rem;
+  }
+}
+

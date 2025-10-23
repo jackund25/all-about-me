@@ -146,9 +146,29 @@ di antara **pedang logika dan kehangatan manusia.**
 
 ---
 
+## Peer Assessment Results
+
+Berikut hasil penilaian rekan terhadap karya saya dalam bentuk rubrik yang digunakan sebagai dasar refleksi diri.
+
+::: {.download-button}
+[⬇️ Download Peer Assessment Excel](../excel/Peer%20Assesment%20UTS-5_Skor.xlsx)
+:::
+
+| Kriteria | 5 - Sangat Baik | 4 - Baik | 3 - Cukup | 2 - Kurang | 1 - Buruk | UTS |
+|-----------|-----------------|-----------|------------|-------------|------------|------|
+| Orisinalitas | Narasi menghadirkan sudut pandang sangat unik dan khas. | Gagasan cukup orisinal dengan sedikit klise. | Beberapa unsur orisinal namun banyak tema umum. | Prediktabel dan orisinalitas rendah. | Klise tanpa unsur baru. | UTS-1 |
+| Keterlibatan | Sangat menarik dari awal hingga akhir, menjaga perhatian audiens. | Umumnya menarik dengan beberapa momen kuat. | Cukup menarik; sesekali kehilangan atensi. | Sulit mempertahankan atensi; konten kurang memikat. | Tidak menarik dan tidak memikat audiens. | UTS-1 |
+| Humor | Humor tepat waktu, relevan, dan efektif. | Humor baik; beberapa momen lucu. | Humor cukup; sebagian berhasil, sebagian tidak. | Humor terasa dipaksakan/tidak tepat. | Humor tidak efektif atau tidak ada. | UTS-1 |
+| Wawasan (Insight) | Memberi pemahaman mendalam tentang daya tarik dan nilai diri. | Pesan jelas meski tidak sangat mendalam. | Ada pesan umum namun dampak terbatas. | Berusaha memberi pesan tapi dangkal. | Tanpa insight bermakna. | UTS-1 |
+| Orisinalitas | Ikatan digambarkan dengan cara sangat unik dan pribadi. | Cukup orisinal, minim klise. | Ada unsur orisinal namun banyak pola umum. | Prediktabel; sedikit unsur baru. | Klise tanpa kebaruan. | UTS-2 |
+| ... | ... | ... | ... | ... | ... | ... |
+
+---
+
 ## **Referensi Kontekstual**
 
 - Materi II2100 *Komunikasi Interpersonal dan Publik* – Modul 1–4  
 - *Memahami Komunikasi Diri dan Pementasan Diri* (2025)  
 - *Kekuatan dan Penggunaan Bahasa dalam Komunikasi* (2025)  
 - *Komunikasi Interpersonal – Panduan dan Glosarium* (2025)  
+
