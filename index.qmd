@@ -1,24 +1,58 @@
-# Selamat Datang {.unnumbered}
+---
+title: "Daffari Adiyatma"
+subtitle: "Mahasiswa Sistem & Teknologi Informasi ITB | Angkatan 2022"
+image: images/DAFFARI.jpg
+about:
+  template: jolla
+  image-shape: round
+  image-width: 15em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/username-anda
+    - icon: github
+      text: Github
+      href: https://github.com/jackund25
+    - icon: envelope
+      text: Email
+      href: mailto:email@anda.com
+---
 
-![About Me](/images/DAFFARI.jpg){width=100%, style="max-width:450px; border-radius:15px; display:block; margin:auto;"}
+# Selamat Datang
 
 Halo! Saya **Daffari Adiyatma**, mahasiswa **S1 Sistem dan Teknologi Informasi – Institut Teknologi Bandung**, angkatan 2022.  
 Saya lahir di Padang dan tumbuh di tengah keluarga yang menghargai logika, kemandirian, dan kehangatan.  
 Saya percaya bahwa hidup adalah perjalanan memahami — bukan hanya dunia, tapi juga diri sendiri.
 
-Di kampus, saya sering disebut “orang logis yang suka bercanda.”  
-Mungkin benar. Saya menyukai argumen sehat, berpikir kritis, tapi juga menghargai sisi manusiawi dari setiap percakapan.  
-Bagi saya, komunikasi yang baik tidak sekadar soal berbicara, melainkan **bagaimana kata-kata bisa membawa empati dan makna.**
+Di kampus, saya sering disebut “orang logis yang suka bercanda.” Mungkin benar. Saya menyukai argumen sehat, berpikir kritis, tapi juga menghargai sisi manusiawi dari setiap percakapan. Bagi saya, komunikasi yang baik tidak sekadar soal berbicara, melainkan **bagaimana kata-kata bisa membawa empati dan makna.**
 
-Website ini berisi rangkaian refleksi dan karya dari mata kuliah  
-**Komunikasi Interpersonal dan Publik (II2100)**.  
-Setiap halaman bukan sekadar tugas, tapi juga cermin perjalanan saya dalam menyeimbangkan **akal, rasa, dan nilai**.  
-Mulai dari menulis tentang diri sendiri, mencipta lagu, bercerita, hingga mengenal bentuk karakter pribadi.
+Website ini berisi rangkaian refleksi dan karya dari mata kuliah **Komunikasi Interpersonal dan Publik (II2100)**. Setiap halaman bukan sekadar tugas, tapi juga cermin perjalanan saya dalam menyeimbangkan **akal, rasa, dan nilai**. Mulai dari menulis tentang diri sendiri, mencipta lagu, bercerita, hingga mengenal bentuk karakter pribadi.
+
+---
+
+## 🗺️ Peta Pemikiran: Ide & Gagasan
+
+:::{.grid}
+
+:::{.g-col-12 .g-col-md-6}
+### 🌱 Dimensi Internal (Refleksi Diri)
+Bagian ini merangkum seluruh perjalanan refleksi personal saya (UTS 1-5), mulai dari penelusuran sejarah diri, ekspresi emosi melalui musik, hingga pemetaan bentuk karakter pribadi. Melalui rangkaian narasi ini, saya mengeksplorasi bagaimana identitas dan nilai-nilai individu menjadi fondasi utama dalam membangun komunikasi interpersonal yang otentik dan bermakna.
+:::
+
+:::{.g-col-12 .g-col-md-6}
+### 🚀 Dimensi Eksternal (Gagasan & Inovasi)
+Bagian ini menyajikan gagasan teknologi untuk solusi kemanusiaan (UAS 1-5), khususnya melalui konsep arsitektur TISE dan protokol *VeriPax* untuk zona krisis. Saya memaparkan pemikiran mengenai pentingnya etika AI sebagai perisai pelindung serta panduan praktis membangun teknologi inklusif yang memprioritaskan mereka yang berada di garis pinggir infrastruktur digital.
+:::
+
+:::
+
 
 > “Keadilan memberi arah, kebijaksanaan memberi batas, empati memberi makna, dan keberanian memberi jalan.”
 
-Terima kasih sudah berkunjung.  
-Semoga dari halaman ini, kamu tidak hanya mengenal siapa saya,  
-tetapi juga menemukan sedikit inspirasi untuk lebih mengenal **diri kamu sendiri.**
+Terima kasih sudah berkunjung. Semoga dari halaman ini, kamu tidak hanya mengenal siapa saya, tetapi juga menemukan sedikit inspirasi untuk lebih mengenal **diri kamu sendiri.**
 
-— **Daffari**
+---
+
+<center>
+*“Technology is best when it brings people together and empowers the marginalized.”*
+</center>

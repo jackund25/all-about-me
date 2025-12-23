@@ -5,35 +5,59 @@ project:
 website:
   title: "Daffari Adiyatma — All About Me"
   description: "Portfolio Asesmen II-2100 KIPP - Institut Teknologi Bandung"
-  site-url: https://daffari.github.io/all-about-me/
+  site-url: https://jackund25.github.io/all-about-me/
+  
   navbar:
+    background: primary
+    search: true          # Menambahkan kolom pencarian
     left:
-      - href: All_About_me/index.qmd
-        text: UTS-1 All About Me
-      - href: My_Song_for_You/index.qmd
-        text: UTS-2 Song for You
-      - href: My_Stories_for_You/index.qmd
-        text: UTS-3 My Stories for You
-      - href: My_Shapes/index.qmd
-        text: UTS-4 My Shape
-      - href: My_Personal_Reviews/index.qmd
-        text: UTS-5 My Personal Reviews
-      - text: "UAS"
+      - href: index.qmd
+        text: Home
+      
+      # --- DROPDOWN 1: UTS PROJECTS ---
+      # Semua UTS 1-5 dikelompokkan di sini agar navbar rapi
+      - text: "UTS Projects"
+        menu:
+          - href: All_About_me/index.qmd
+            text: "UTS-1: All About Me"
+          - href: My_Song_for_You/index.qmd
+            text: "UTS-2: Song for You"
+          - href: My_Stories_for_You/index.qmd
+            text: "UTS-3: My Stories for You"
+          - href: My_Shapes/index.qmd
+            text: "UTS-4: My Shape"
+          - href: My_Personal_Reviews/index.qmd
+            text: "UTS-5: My Personal Reviews"
+
+      # --- DROPDOWN 2: UAS MASTERPIECE ---
+      - text: "UAS Projects"
         menu:
           - href: My_Concepts/index.qmd
-            text: My Concepts
+            text: "UAS-1: My Concepts"
           - href: My_Opinions/index.qmd
-            text: My Opinions
+            text: "UAS-2: My Opinions"
           - href: My_Innovations/index.qmd
-            text: My Innovations
+            text: "UAS-3: My Innovations"
           - href: My_Knowledge/index.qmd
-            text: My Knowledge
+            text: "UAS-4: My Knowledge"
           - href: My_Professional_Reviews/index.qmd
-            text: My Professional Reviews
+            text: "UAS-5: My Professional Reviews"
+            
+    # Ikon Sosial Media di sebelah kanan
+    right:
+      - icon: github
+        href: https://github.com/jackund25
+        aria-label: GitHub
+
   page-navigation: true
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: cosmo   # Tema terang pilihan Anda
+      dark: darkly   # Fitur dark mode otomatis
     css: styles.css
     toc: true
+    smooth-scroll: true
+
+editor: visual

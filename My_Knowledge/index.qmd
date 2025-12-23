@@ -1,7 +1,153 @@
-## UAS-4 My Knowledge
+---
+title: "UAS-4 My Knowledge"
+subtitle: "Engineering for Resilience: Panduan Desain Teknologi di Zona Krisis"
+author: "Jackund25"
+format: html
+editor: visual
+---
 
-Cara saya mengkomunikasikan sebuah pengatahuan sebagai petunjuk bagi orang lain
-1) saya tulis [makalah sebagai bahan utama](Rekomendasi%20Presentasi%20Efektif(Contoh%20Makalah).pdf)
-2) lalu saya buat [transkrip ucapan lisan](Contoh%20Transkrip%20Presentasi.pdf)
-3) kemudian saya kembangkan [slide pendukung trnsskrip](Rekomendasi%20Presentasi%20(Contoh%20Slides).pdf)
-4) lalu saya memproduksivideo audio visual {{< video https://youtu.be/ZbghfMvnPZc>}} {{< video https://youtu.be/ZbghfMvnPZc>}}
+# My Knowledge: Engineering for Resilience
+
+**Panduan Praktis Membangun Teknologi yang Bertahan Saat Infrastruktur Runtuh**
+
+## 1. Pengantar: Coding untuk Survival
+
+Dokumen ini adalah *public knowledge sharing* tentang bagaimana merancang sistem teknologi yang tetap beroperasi di lingkungan ekstrim (zona perang, bencana alam, atau blackout total).
+
+**Target Audience:**
+* **Humanitarian Developers:** Yang ingin membangun alat bantu digital.
+* **Network Engineers:** Yang merancang infrastruktur darurat.
+* **Mahasiswa IT:** Yang ingin riset topik *Disaster Recovery*.
+
+**Apa yang akan Anda pelajari:**
+1.  Prinsip arsitektur *Decentralized & Delay-Tolerant*.
+2.  Optimasi *Low-Bandwidth* untuk jaringan 2G/Mesh.
+3.  Checklist keamanan untuk *High-Risk Environment*.
+
+---
+
+## 2. Part 1: Prinsip Dasar Crisis-Tech Design
+
+Berbeda dengan aplikasi komersial (Gojek/Tokopedia) yang berasumsi internet stabil dan server pusat selalu *up*, Crisis-Tech harus berasumsi **semuanya akan gagal**.
+
+### 2.1 Prinsip 1: Local-First & Delay-Tolerant Networks (DTN)
+
+#### 2.1.1 Apa Artinya?
+Jangan pernah mendesain aplikasi yang "blank" saat tidak ada internet. Aplikasi harus berfungsi penuh secara lokal, dan menganggap koneksi internet hanya sebagai bonus sesekali.
+
+#### 2.1.2 The Technical Shift
+* **Commercial Model:** Request $\rightarrow$ Server Processing $\rightarrow$ Response. (Gagal jika server mati).
+* **Crisis Model:** Store Locally $\rightarrow$ Queue $\rightarrow$ Hop-to-Neighbor $\rightarrow$ Eventually Sync.
+
+#### 2.1.3 How to Apply (Pseudo-Code)
+Gunakan pola **Store-and-Forward**.
+
+```javascript
+// Bad Practice (Commercial Style)
+async function sendSOS(message) {
+  try {
+    await server.post('/api/sos', message); // Gagal total jika offline
+    alert("Sent!");
+  } catch (e) {
+    alert("Error: No Internet"); // User mati kutu
+  }
+}
+
+// Good Practice (Crisis Style)
+function sendSOS(message) {
+  // 1. Simpan ke Local Storage (SQLite/Realm)
+  localDB.save('outbox', message);
+  
+  // 2. Beri Feedback Positif Dulu (Optimistic UI)
+  ui.showStatus("Pesan Diamankan. Mencari node...");
+  
+  // 3. Coba kirim via Mesh (Bluetooth/WiFi Direct)
+  meshNetwork.broadcast(message);
+  
+  // 4. Queue untuk Internet sync jika nanti ada sinyal
+  backgroundSync.register('sync_sos', message);
+}
+
+### 2.2 Prinsip 2: Design for "Digital Famine" (Low Bandwidth)
+
+#### 2.2.1 Apa Artinya?
+Di zona krisis, bandwidth adalah emas. Jangan kirim data dalam format JSON yang "bengkak" atau gambar resolusi tinggi. Desain protokol komunikasi harus sehemat mungkin (*Byte-level optimization*).
+
+#### 2.2.2 The Math
+* **4G Normal:** ~10 Mbps.
+* **Crisis/Satellite Edge:** 1-5 Kbps (Seribu kali lebih lambat).
+* **Implikasi:** Aplikasi modern biasa akan *timeout* dan gagal total.
+
+#### 2.2.3 How to Apply
+Gunakan kompresi biner (seperti Protobuf atau MessagePack) daripada JSON teks biasa untuk pengiriman data.
+
+**Perbandingan Payload:**
+
+* **JSON (Boros - 85 Bytes):**
+  ```json
+  {"type": "sos", "lat": -6.200, "long": 106.816, "status": "critical"}
+
+* **Binary/Bit-Packing (Hemat - 8 Bytes):**
+  `01 C018 42A1 03` (Representasi Hex)
+
+Menghemat 90% ukuran data berarti pesan memiliki peluang **10x lebih besar** untuk berhasil terkirim di jaringan yang macet atau tidak stabil.
+
+### 2.3 Prinsip 3: Trust No One (Zero-Trust Architecture)
+
+#### 2.3.1 Apa Artinya?
+Di zona konflik, server fisik bisa disita musuh, atau *node* tetangga bisa jadi mata-mata. Jangan percayakan keamanan pada server pusat semata. Keamanan harus melekat pada **data itu sendiri** (*End-to-End Encryption*).
+
+#### 2.3.2 Implementasi
+* **Enkripsi:** Gunakan kunci privat yang tersimpan di perangkat pengguna, bukan di server.
+* **Anonimitas:** Samarkan metadata lokasi agar pengguna tidak bisa dilacak oleh pihak yang bermusuhan.
+
+## 3. Part 2: Common Pitfalls (Jebakan Mematikan)
+
+### 3.1 Pitfall 1: "Battery Vampire"
+
+**The Mistake:** Aplikasi terus-menerus memindai GPS dan Bluetooth di *background* untuk mencari sinyal.
+**The Reality:** Di zona perang, listrik mati dan genset langka. HP adalah penyambung nyawa. Jika aplikasi Anda menghabiskan baterai dalam 2 jam, aplikasi itu akan segera di-*uninstall*.
+**Solusi:** Gunakan "Burst Sync". Hanya nyalakan radio setiap 15-30 menit untuk sinkronisasi cepat, lalu kembali ke mode tidur (*deep sleep*).
+
+### 3.2 Pitfall 2: Ketergantungan pada API Pihak Ketiga
+
+**The Mistake:** Menggunakan Google Maps API, Firebase Auth, atau layanan cloud pihak ketiga yang umum.
+**The Reality:** Pihak berwenang atau rezim bisa memblokir IP Google/AWS di negara tersebut (*Internet Shutdown/Censorship*).
+**Solusi:**
+* Gunakan peta vektor offline (seperti OpenStreetMap MBTiles) yang tertanam di aplikasi.
+* Gunakan autentikasi berbasis Kriptografi (Public/Private Key) lokal, bukan login email/medsos.
+
+## 4. Part 3: Evaluation Checklist
+
+Gunakan checklist ini sebelum merilis teknologi untuk keperluan kemanusiaan:
+
+### 4.1 Resilience Checklist
+- [ ] **Offline-Capable:** Apakah fungsi inti (Peta/Chat) jalan tanpa sinyal sama sekali?
+- [ ] **Interoperability:** Apakah bisa jalan di Android versi lama (misal: Android 6) yang banyak dipakai di negara berkembang?
+- [ ] **Power Efficient:** Apakah penggunaan baterai <5% per jam saat *idle*?
+- [ ] **Small Footprint:** Apakah ukuran APK <20 MB? (Agar mudah disebar via Bluetooth/ShareIt).
+
+### 4.2 Security Checklist
+- [ ] **E2EE (End-to-End Encryption):** Apakah pesan dienkripsi dari pengirim ke penerima?
+- [ ] **Metadata Protection:** Apakah lokasi pengguna disamarkan (*obfuscated*)?
+- [ ] **Panic Button:** Apakah ada fitur "Wipe Data" instan jika HP disita?
+
+## 5. Part 4: Real-World Case Studies
+
+### 5.1 Good Example: Bridgefy (Hong Kong Protests)
+* **What:** Aplikasi pesan offline berbasis Bluetooth Mesh.
+* **Why it worked:** Saat pemerintah mematikan internet, demonstran tetap bisa berkoordinasi secara *peer-to-peer* menggunakan jaringan antar-HP.
+* **Lesson:** Desentralisasi adalah kunci perlawanan sipil dan ketahanan bencana.
+
+### 5.2 Bad Example: Apps yang "Heavy-Online"
+* **What:** Banyak aplikasi bantuan bencana yang mewajibkan login Facebook/Google saat pertama dibuka.
+* **Why it failed:** Saat bencana terjadi, menara seluler seringkali roboh pertama kali. User tidak bisa login, sehingga aplikasi tidak bisa digunakan sama sekali untuk meminta tolong.
+* **Lesson:** Identitas harus bersifat lokal (*Local Identity*), bukan bergantung pada cloud.
+
+## 6. Conclusion: Knowledge as a Shield
+
+Mengembangkan teknologi untuk zona nyaman itu mudah. Mengembangkan teknologi untuk tempat di mana "Error 404" berarti kematian, itu membutuhkan *mindset* yang sepenuhnya berbeda.
+
+Prinsip-prinsip ini—**Local-First, Low-Bandwidth, Zero-Trust**—bukan hanya teori teknis, tapi etika moral *developer* dalam melindungi nyawa pengguna.
+
+**"Code like lives depend on it. Because they do."**

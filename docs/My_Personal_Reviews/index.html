@@ -38,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-203c05c04b54dbe261474da57f29730d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,12 +73,175 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -94,55 +261,74 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../All_About_me/index.html"> 
-<span class="menu-text">UTS-1 All About Me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Song_for_You/index.html"> 
-<span class="menu-text">UTS-2 Song for You</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Stories_for_You/index.html"> 
-<span class="menu-text">UTS-3 My Stories for You</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Shapes/index.html"> 
-<span class="menu-text">UTS-4 My Shape</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../My_Personal_Reviews/index.html" aria-current="page"> 
-<span class="menu-text">UTS-5 My Personal Reviews</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">UAS</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uts-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">UTS Projects</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-uas">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-uts-projects">    
+        <li>
+    <a class="dropdown-item" href="../All_About_me/index.html">
+ <span class="dropdown-text">UTS-1: All About Me</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Song_for_You/index.html">
+ <span class="dropdown-text">UTS-2: Song for You</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Stories_for_You/index.html">
+ <span class="dropdown-text">UTS-3: My Stories for You</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Shapes/index.html">
+ <span class="dropdown-text">UTS-4: My Shape</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Personal_Reviews/index.html">
+ <span class="dropdown-text">UTS-5: My Personal Reviews</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uas-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">UAS Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-uas-projects">    
         <li>
     <a class="dropdown-item" href="../My_Concepts/index.html">
- <span class="dropdown-text">My Concepts</span></a>
+ <span class="dropdown-text">UAS-1: My Concepts</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Opinions/index.html">
- <span class="dropdown-text">My Opinions</span></a>
+ <span class="dropdown-text">UAS-2: My Opinions</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Innovations/index.html">
- <span class="dropdown-text">My Innovations</span></a>
+ <span class="dropdown-text">UAS-3: My Innovations</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Knowledge/index.html">
- <span class="dropdown-text">My Knowledge</span></a>
+ <span class="dropdown-text">UAS-4: My Knowledge</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Professional_Reviews/index.html">
- <span class="dropdown-text">My Professional Reviews</span></a>
+ <span class="dropdown-text">UAS-5: My Professional Reviews</span></a>
   </li>  
     </ul>
   </li>
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jackund25"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -163,11 +349,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#review-uts-2-songs-for-you" id="toc-review-uts-2-songs-for-you" class="nav-link" data-scroll-target="#review-uts-2-songs-for-you"><strong>Review UTS-2 – Songs for You</strong></a></li>
   <li><a href="#review-uts-3-my-stories-for-you" id="toc-review-uts-3-my-stories-for-you" class="nav-link" data-scroll-target="#review-uts-3-my-stories-for-you"><strong>Review UTS-3 – My Stories for You</strong></a></li>
   <li><a href="#review-uts-4-my-shape" id="toc-review-uts-4-my-shape" class="nav-link" data-scroll-target="#review-uts-4-my-shape"><strong>Review UTS-4 – My Shape</strong></a></li>
-  <li><a href="#analisis-integratif-perkembangan-kompetensi-komunikasi" id="toc-analisis-integratif-perkembangan-kompetensi-komunikasi" class="nav-link" data-scroll-target="#analisis-integratif-perkembangan-kompetensi-komunikasi"><strong>Analisis Integratif – Perkembangan Kompetensi Komunikasi</strong></a></li>
+  <li><a href="#analisis-integratif" id="toc-analisis-integratif" class="nav-link" data-scroll-target="#analisis-integratif"><strong>Analisis Integratif</strong></a></li>
   <li><a href="#etos-dan-empati-nilai-yang-bertahan" id="toc-etos-dan-empati-nilai-yang-bertahan" class="nav-link" data-scroll-target="#etos-dan-empati-nilai-yang-bertahan"><strong>Etos dan Empati – Nilai yang Bertahan</strong></a></li>
   <li><a href="#rekomendasi-pengembangan-diri" id="toc-rekomendasi-pengembangan-diri" class="nav-link" data-scroll-target="#rekomendasi-pengembangan-diri"><strong>Rekomendasi Pengembangan Diri</strong></a></li>
-  <li><a href="#kesimpulan-komunikasi-sebagai-cermin-diri" id="toc-kesimpulan-komunikasi-sebagai-cermin-diri" class="nav-link" data-scroll-target="#kesimpulan-komunikasi-sebagai-cermin-diri"><strong>Kesimpulan – Komunikasi sebagai Cermin Diri</strong></a></li>
-  <li><a href="#peer-assessment-results" id="toc-peer-assessment-results" class="nav-link" data-scroll-target="#peer-assessment-results">Peer Assessment Results</a></li>
+  <li><a href="#peer-assessment-results" id="toc-peer-assessment-results" class="nav-link" data-scroll-target="#peer-assessment-results"><strong>Peer Assessment Results</strong></a></li>
+  <li><a href="#kesimpulan" id="toc-kesimpulan" class="nav-link" data-scroll-target="#kesimpulan"><strong>Kesimpulan</strong></a></li>
   <li><a href="#referensi-kontekstual" id="toc-referensi-kontekstual" class="nav-link" data-scroll-target="#referensi-kontekstual"><strong>Referensi Kontekstual</strong></a></li>
   </ul></li>
   </ul>
@@ -175,6 +361,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -206,232 +393,80 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="pendahuluan-tujuan-refleksi" class="level2">
 <h2 class="anchored" data-anchor-id="pendahuluan-tujuan-refleksi"><strong>Pendahuluan – Tujuan Refleksi</strong></h2>
-<p>UTS-5 ini merupakan refleksi menyeluruh atas perjalanan empat proyek komunikasi personal sebelumnya — <em>All About Me</em>, <em>Songs for You</em>, <em>My Stories for You</em>, dan <em>My Shape.</em><br>
-Keempatnya bukan hanya tugas akademik, tetapi latihan memahami bagaimana diri saya berpikir, berperasaan, dan berhubungan dengan orang lain.</p>
-<p>Melalui review ini, saya berupaya menilai kembali perkembangan komunikasi diri (<em>self-communication</em>), kemampuan berempati, serta konsistensi antara nilai, ekspresi, dan tindakan.<br>
-Proses ini sekaligus menjadi bentuk <em>self-assessment</em> terhadap kompetensi komunikasi interpersonal yang telah saya kembangkan selama perkuliahan.</p>
+<p>UTS-5 ini merupakan refleksi menyeluruh atas perjalanan empat proyek komunikasi personal sebelumnya — <em>All About Me</em>, <em>Songs for You</em>, <em>My Stories for You</em>, dan <em>My Shape.</em> Keempatnya bukan hanya tugas akademik, tetapi latihan memahami bagaimana diri saya berpikir, berperasaan, dan berhubungan dengan orang lain.</p>
+<p>Untuk melakukan review, seperti pada <strong><a href="Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf">pendekatan AI</a></strong>, kita membutuhkan rubrik yang objektif dan terukur untuk menilai kembali perkembangan komunikasi diri (<em>self-communication</em>), kemampuan berempati, serta konsistensi antara nilai, ekspresi, dan tindakan.</p>
+<p>Proses ini sekaligus menjadi bentuk <em>self-assessment</em> terhadap kompetensi komunikasi interpersonal yang telah saya kembangkan selama perkuliahan.</p>
 <hr>
 </section>
 <section id="review-uts-1-all-about-me" class="level2">
 <h2 class="anchored" data-anchor-id="review-uts-1-all-about-me"><strong>Review UTS-1 – All About Me</strong></h2>
-<p>UTS pertama adalah perkenalan diri melalui narasi reflektif yang saya beri judul <em>“Dari Logika, Nilai, dan Dunia Imajinasi.”</em><br>
-Dalam karya ini, saya mengekspresikan sisi rasional dan filosofis diri melalui empat tokoh simbolik (Souma, Baldwin IV, Salahuddin, dan Lelouch).<br>
-Dari keempatnya, saya belajar bahwa menjadi manusia berarti menyeimbangkan logika dan empati.</p>
-<p>Tulisan ini membuka kesadaran bahwa komunikasi diri yang efektif dimulai dari <strong>pemahaman nilai personal</strong>.<br>
-Ketika seseorang memahami mengapa ia berpikir seperti itu, ia akan lebih mudah menjelaskan dirinya kepada orang lain dengan jujur dan bermakna.</p>
+<p>UTS pertama adalah perkenalan diri melalui narasi reflektif yang saya beri judul <em>“Dari Logika, Nilai, dan Dunia Imajinasi.”</em> Dalam karya ini, saya mengekspresikan sisi rasional dan filosofis diri melalui empat tokoh simbolik.</p>
+<p>Tulisan ini membuka kesadaran bahwa komunikasi diri yang efektif dimulai dari <strong>pemahaman nilai personal</strong>. Ketika seseorang memahami mengapa ia berpikir seperti itu, ia akan lebih mudah menjelaskan dirinya kepada orang lain dengan jujur dan bermakna.</p>
 <blockquote class="blockquote">
-<p><strong>Skor UTS-1:</strong> 4.75 (Sangat Baik)<br>
-<strong>Kekuatan:</strong> Reflektif, filosofis, otentik.<br>
-<strong>Perbaikan:</strong> Visualisasi dan ekspresi nonverbal dapat dikembangkan pada versi video.</p>
+<p><strong>Skor:</strong> 15/20 (75%) <strong>Catatan:</strong> Ada pengenalan diri dan esai identitas naratif; kuat di insight &amp; struktur. Suara personal bisa ditambah untuk lebih otentik.</p>
 </blockquote>
 <hr>
 </section>
 <section id="review-uts-2-songs-for-you" class="level2">
 <h2 class="anchored" data-anchor-id="review-uts-2-songs-for-you"><strong>Review UTS-2 – Songs for You</strong></h2>
-<p>UTS kedua adalah karya musik berjudul <em>“In the Quiet Hall I Stand Alone.”</em><br>
-Lagu bilingual Jepang–Inggris ini menjadi cara saya menyalurkan emosi yang sulit diungkap secara verbal.<br>
-Melalui kombinasi dua bahasa, saya belajar bahwa komunikasi tidak hanya terjadi lewat kata, tetapi juga melalui nada, ritme, dan simbol.</p>
-<p>Lagu ini mengajarkan pentingnya <strong>komunikasi emosional yang tulus namun terkendali.</strong><br>
-Bahwa kadang, keheningan justru menyampaikan pesan paling dalam.<br>
-Refleksi ini membuat saya memahami bahwa dalam komunikasi interpersonal, kepekaan (<em>pathos</em>) sama pentingnya dengan logika (<em>logos</em>).</p>
+<p>UTS kedua adalah karya musik berjudul <em>“In the Quiet Hall I Stand Alone.”</em> Lagu bilingual Jepang–Inggris ini menjadi cara saya menyalurkan emosi yang sulit diungkap secara verbal.</p>
+<p>Lagu ini mengajarkan pentingnya <strong>komunikasi emosional yang tulus namun terkendali.</strong> Bahwa kadang, keheningan justru menyampaikan pesan paling dalam. Refleksi ini membuat saya memahami bahwa dalam komunikasi interpersonal, kepekaan (<em>pathos</em>) sama pentingnya dengan logika (<em>logos</em>).</p>
 <blockquote class="blockquote">
-<p><strong>Skor UTS-2:</strong> 4.75 (Sangat Baik)<br>
-<strong>Kekuatan:</strong> Emosional, simbolik, puitis.<br>
-<strong>Perbaikan:</strong> Perlu eksplorasi aspek nonverbal seperti gesture dan intonasi untuk memperkuat resonansi pesan.</p>
+<p><strong>Skor:</strong> 15/20 (75%) <strong>Catatan:</strong> Tema konsisten dan puitik dengan 3 lirik lengkap. Struktur lagu bisa dibuat lebih rapat di beberapa bagian.</p>
 </blockquote>
 <hr>
 </section>
 <section id="review-uts-3-my-stories-for-you" class="level2">
 <h2 class="anchored" data-anchor-id="review-uts-3-my-stories-for-you"><strong>Review UTS-3 – My Stories for You</strong></h2>
-<p>UTS ketiga berisi dua cerita: <em>“Pembuktian Sang Medioker”</em> (kisah nyata) dan <em>“Di Antara Pedang dan Pikiran”</em> (fiksi reflektif).<br>
-Keduanya menggambarkan perjalanan menghadapi keterbatasan dan keyakinan diri bahwa berpikir dengan hati adalah bentuk keberanian sejati.</p>
-<p>Melalui karya ini, saya belajar bahwa <strong>storytelling adalah bentuk komunikasi interpersonal yang paling manusiawi.</strong><br>
-Cerita menghubungkan logika dan emosi, serta menciptakan ruang empati di antara perbedaan pengalaman.<br>
-Kisah pribadi mengajarkan kerendahan hati, sementara kisah fiksi mengajarkan imajinasi moral.</p>
+<p>UTS ketiga berisi dua cerita: <em>“Pembuktian Sang Medioker”</em> dan <em>“Di Antara Pedang dan Pikiran”</em>. Keduanya menggambarkan perjalanan menghadapi keterbatasan dan keyakinan diri.</p>
+<p>Melalui karya ini, saya belajar bahwa <strong>storytelling adalah bentuk komunikasi interpersonal yang paling manusiawi.</strong> Kisah pribadi mengajarkan kerendahan hati, sementara kisah fiksi mengajarkan imajinasi moral.</p>
 <blockquote class="blockquote">
-<p><strong>Skor UTS-3:</strong> 5.00 (Sangat Baik)<br>
-<strong>Kekuatan:</strong> Naratif kuat, reflektif, inspiratif.<br>
-<strong>Perbaikan:</strong> Dapat dikembangkan menjadi audio storytelling agar emosi lebih terasa.</p>
+<p><strong>Skor:</strong> 19/20 (95%) <strong>Catatan:</strong> Kisah sangat kuat (mis. <em>Gaun Pengantin Gladys</em>, <em>Fly My Eagle Fly</em>). Aspek <em>narrative craft</em> dan emosi sangat tinggi.</p>
 </blockquote>
 <hr>
 </section>
 <section id="review-uts-4-my-shape" class="level2">
 <h2 class="anchored" data-anchor-id="review-uts-4-my-shape"><strong>Review UTS-4 – My Shape</strong></h2>
-<p>UTS keempat, <em>“Cermin Sang Debater,”</em> adalah bentuk eksplorasi diri berbasis hasil asesmen kepribadian (MBTI dan VIA Strengths).<br>
-Saya menyadari bahwa kekuatan saya terletak pada kombinasi <strong>logika, humor, keadilan, dan empati.</strong><br>
-Namun, saya juga mengenali tantangan internal — terutama prokrastinasi dan rasa ingin tahu yang kadang berlebihan.</p>
-<p>Karya ini membuat saya memahami bahwa <strong>mengenal diri adalah fondasi komunikasi interpersonal yang sehat.</strong><br>
-Seseorang tidak dapat berkomunikasi dengan orang lain secara jujur jika belum berdamai dengan dirinya sendiri.</p>
+<p>UTS keempat, <em>“Cermin Sang Debater,”</em> adalah eksplorasi diri berbasis hasil asesmen kepribadian. Saya menyadari kekuatan saya pada kombinasi logika, humor, dan empati.</p>
+<p>Karya ini membuat saya memahami bahwa <strong>mengenal diri adalah fondasi komunikasi interpersonal yang sehat.</strong> Seseorang tidak dapat berkomunikasi dengan orang lain secara jujur jika belum berdamai dengan dirinya sendiri.</p>
 <blockquote class="blockquote">
-<p><strong>Skor UTS-4:</strong> 5.00 (Sangat Baik)<br>
-<strong>Kekuatan:</strong> Reflektif, simbolik, empatik.<br>
-<strong>Perbaikan:</strong> Dapat disertai visualisasi kekuatan diri untuk memperkuat dimensi visual komunikasi.</p>
+<p><strong>Skor:</strong> 18/20 (90%) <strong>Catatan:</strong> Piagam Diri, Narasi 90 detik, dan versi panjang disajikan jelas &amp; terstruktur. Langkah aksi konkret sudah dirangkum dengan baik.</p>
 </blockquote>
 <hr>
 </section>
-<section id="analisis-integratif-perkembangan-kompetensi-komunikasi" class="level2">
-<h2 class="anchored" data-anchor-id="analisis-integratif-perkembangan-kompetensi-komunikasi"><strong>Analisis Integratif – Perkembangan Kompetensi Komunikasi</strong></h2>
-<p>Dari empat karya tersebut, saya melihat perkembangan yang jelas dalam tiga dimensi utama:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 28%">
-<col style="width: 57%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Aspek</th>
-<th>Awal (UTS-1)</th>
-<th>Perkembangan (UTS-2 – UTS-4)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Komunikasi Diri (Intrapersonal)</strong></td>
-<td>Reflektif dan konseptual.</td>
-<td>Lebih jujur, empatik, dan berimbang antara logika dan emosi.</td>
-</tr>
-<tr class="even">
-<td><strong>Komunikasi Interpersonal</strong></td>
-<td>Eksplorasi nilai dan identitas.</td>
-<td>Mengarah ke kedewasaan emosional dan kesadaran etis dalam menyampaikan pesan.</td>
-</tr>
-<tr class="odd">
-<td><strong>Kompetensi Sosial dan Digital</strong></td>
-<td>Ekspresi tertulis dominan.</td>
-<td>Mulai menggunakan media musik, narasi, dan simbol multimodal untuk menyalurkan makna.</td>
-</tr>
-</tbody>
-</table>
-<p>Saya menyimpulkan bahwa komunikasi bukan hanya <em>tentang berbicara</em>, tetapi tentang <em>menghidupi pesan yang ingin disampaikan.</em><br>
-Dalam setiap proyek, saya menemukan bagaimana <em>logos</em>, <em>pathos</em>, dan <em>ethos</em> saling mendukung:<br>
-logika menstrukturkan, emosi menghidupkan, dan integritas memastikan pesan tetap bermakna.</p>
+<section id="analisis-integratif" class="level2">
+<h2 class="anchored" data-anchor-id="analisis-integratif"><strong>Analisis Integratif</strong></h2>
+<p>Dari empat karya tersebut, saya melihat perkembangan yang jelas: komunikasi bukan hanya <em>tentang berbicara</em>, tetapi tentang <em>menghidupi pesan</em>. Saya menemukan bagaimana <em>logos</em>, <em>pathos</em>, dan <em>ethos</em> saling mendukung: logika menstrukturkan, emosi menghidupkan, dan integritas memastikan pesan bermakna.</p>
 <hr>
 </section>
 <section id="etos-dan-empati-nilai-yang-bertahan" class="level2">
 <h2 class="anchored" data-anchor-id="etos-dan-empati-nilai-yang-bertahan"><strong>Etos dan Empati – Nilai yang Bertahan</strong></h2>
-<p>Satu benang merah yang saya sadari sejak UTS-1 adalah pentingnya <strong>empati yang berlandaskan etika.</strong><br>
-Saya belajar untuk tidak sekadar memahami orang lain, tetapi juga menghormati ruang emosional mereka.<br>
-Sebagai seseorang dengan tipe <em>Debater (ENTP)</em>, saya terbiasa berargumen logis, namun kini saya berusaha agar setiap argumen juga membawa kehangatan dan rasa hormat.</p>
-<p>Empati bukan berarti selalu setuju, tetapi berusaha memahami konteks dan emosi di balik kata-kata orang lain.<br>
-Inilah bentuk komunikasi yang paling “manusiawi” — dan juga paling sulit dilakukan secara konsisten.</p>
+<p>Satu benang merah yang saya sadari adalah pentingnya <strong>empati yang berlandaskan etika.</strong> Sebagai tipe <em>Debater (ENTP)</em>, saya kini berusaha agar setiap argumen logis yang saya buat juga membawa kehangatan dan rasa hormat pada ruang emosional orang lain.</p>
 <hr>
 </section>
 <section id="rekomendasi-pengembangan-diri" class="level2">
 <h2 class="anchored" data-anchor-id="rekomendasi-pengembangan-diri"><strong>Rekomendasi Pengembangan Diri</strong></h2>
-<p>Sebagai tindak lanjut refleksi ini, saya menetapkan beberapa langkah perbaikan konkret:</p>
 <ol type="1">
-<li><p><strong>Meningkatkan Konsistensi Eksekusi.</strong><br>
-Tidak cukup berpikir dan merancang ide; saya perlu melatih kedisiplinan dalam tindakan nyata.</p></li>
-<li><p><strong>Melatih Komunikasi Nonverbal.</strong><br>
-Mengekspresikan pesan lewat ekspresi wajah, intonasi, dan gesture, terutama dalam konteks publik.</p></li>
-<li><p><strong>Mengasah Keterampilan Mendengar Aktif.</strong><br>
-Mengurangi dorongan untuk selalu menjawab, dan lebih banyak menyerap perspektif lawan bicara.</p></li>
-<li><p><strong>Mengembangkan Portofolio Multimoda.</strong><br>
-Menggabungkan tulisan, audio, dan visual untuk menyalurkan pesan yang lebih inklusif dan ekspresif.</p></li>
-<li><p><strong>Menjaga Keseimbangan antara Logika dan Empati.</strong><br>
-Memastikan bahwa setiap argumen yang saya buat tetap memiliki ruang bagi kemanusiaan.</p></li>
+<li><strong>Meningkatkan Konsistensi Eksekusi:</strong> Melatih kedisiplinan dalam tindakan nyata.</li>
+<li><strong>Melatih Komunikasi Nonverbal:</strong> Ekspresi wajah dan intonasi di ruang publik.</li>
+<li><strong>Mendengar Aktif:</strong> Lebih banyak menyerap perspektif lawan bicara.</li>
+<li><strong>Portofolio Multimoda:</strong> Menggabungkan audio-visual untuk pesan yang inklusif.</li>
 </ol>
 <hr>
 </section>
-<section id="kesimpulan-komunikasi-sebagai-cermin-diri" class="level2">
-<h2 class="anchored" data-anchor-id="kesimpulan-komunikasi-sebagai-cermin-diri"><strong>Kesimpulan – Komunikasi sebagai Cermin Diri</strong></h2>
-<p>Melalui seluruh proses UTS ini, saya memahami bahwa komunikasi bukan hanya kemampuan teknis, tetapi juga <strong>cermin dari kematangan jiwa.</strong><br>
-Ia mencerminkan siapa kita, bagaimana kita berpikir, dan bagaimana kita menghargai orang lain.</p>
-<p>Sebagaimana saya tulis dalam <em>My Shape</em>, saya bukan yang paling hebat, tapi saya selalu berusaha memahami.<br>
-Dan mungkin, di sanalah letak kekuatan komunikasi saya:<br>
-di antara <strong>pedang logika dan kehangatan manusia.</strong></p>
-<blockquote class="blockquote">
-<p><strong>Skor Self-Assessment UTS-5 (AI-based): 4.9 / 5.0 – Melampaui Harapan</strong><br>
-<em>Level CPMK-2 dan CPMK-4: “Tercapai” hingga “Melampaui.”</em></p>
-</blockquote>
+<section id="peer-assessment-results" class="level2">
+<h2 class="anchored" data-anchor-id="peer-assessment-results"><strong>Peer Assessment Results</strong></h2>
+<p>Berikut adalah ringkasan hasil penilaian otomatis (<em>Self-Assessment</em>) terhadap seluruh tugas UTS. Tabel ini merangkum skor dan umpan balik utama. Untuk detail rubrik lengkap, silakan unduh file data asli di bawah ini.</p>
+<p>{.callout-note appearance=“simple” icon=false} ### 📂 Data Penilaian</p>
+<ul>
+<li><strong>Rubrik Acuan:</strong> <a href="Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf">📄 Doc.5 Rubrik Evaluasi (PDF)</a></li>
+<li><strong>Data Skor Lengkap:</strong> <a href="Self-Assessment_UTS-1_s_d__UTS-5__dibuat_otomatis_.csv">📊 Download Self-Assessment Data (CSV)</a></li>
+</ul>
 <hr>
 </section>
-<section id="peer-assessment-results" class="level2">
-<h2 class="anchored" data-anchor-id="peer-assessment-results">Peer Assessment Results</h2>
-<p>Berikut hasil penilaian rekan terhadap karya saya dalam bentuk rubrik yang digunakan sebagai dasar refleksi diri.</p>
-<div class="download-button">
-<p><a href="../excel/Peer Assesment UTS-5_Skor.xlsx">⬇️ Download Peer Assessment Excel</a></p>
-</div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 20%">
-<col style="width: 13%">
-<col style="width: 14%">
-<col style="width: 15%">
-<col style="width: 14%">
-<col style="width: 7%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Kriteria</th>
-<th>5 - Sangat Baik</th>
-<th>4 - Baik</th>
-<th>3 - Cukup</th>
-<th>2 - Kurang</th>
-<th>1 - Buruk</th>
-<th>UTS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Orisinalitas</td>
-<td>Narasi menghadirkan sudut pandang sangat unik dan khas.</td>
-<td>Gagasan cukup orisinal dengan sedikit klise.</td>
-<td>Beberapa unsur orisinal namun banyak tema umum.</td>
-<td>Prediktabel dan orisinalitas rendah.</td>
-<td>Klise tanpa unsur baru.</td>
-<td>UTS-1</td>
-</tr>
-<tr class="even">
-<td>Keterlibatan</td>
-<td>Sangat menarik dari awal hingga akhir, menjaga perhatian audiens.</td>
-<td>Umumnya menarik dengan beberapa momen kuat.</td>
-<td>Cukup menarik; sesekali kehilangan atensi.</td>
-<td>Sulit mempertahankan atensi; konten kurang memikat.</td>
-<td>Tidak menarik dan tidak memikat audiens.</td>
-<td>UTS-1</td>
-</tr>
-<tr class="odd">
-<td>Humor</td>
-<td>Humor tepat waktu, relevan, dan efektif.</td>
-<td>Humor baik; beberapa momen lucu.</td>
-<td>Humor cukup; sebagian berhasil, sebagian tidak.</td>
-<td>Humor terasa dipaksakan/tidak tepat.</td>
-<td>Humor tidak efektif atau tidak ada.</td>
-<td>UTS-1</td>
-</tr>
-<tr class="even">
-<td>Wawasan (Insight)</td>
-<td>Memberi pemahaman mendalam tentang daya tarik dan nilai diri.</td>
-<td>Pesan jelas meski tidak sangat mendalam.</td>
-<td>Ada pesan umum namun dampak terbatas.</td>
-<td>Berusaha memberi pesan tapi dangkal.</td>
-<td>Tanpa insight bermakna.</td>
-<td>UTS-1</td>
-</tr>
-<tr class="odd">
-<td>Orisinalitas</td>
-<td>Ikatan digambarkan dengan cara sangat unik dan pribadi.</td>
-<td>Cukup orisinal, minim klise.</td>
-<td>Ada unsur orisinal namun banyak pola umum.</td>
-<td>Prediktabel; sedikit unsur baru.</td>
-<td>Klise tanpa kebaruan.</td>
-<td>UTS-2</td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-</tbody>
-</table>
-<hr>
+<section id="kesimpulan" class="level2">
+<h2 class="anchored" data-anchor-id="kesimpulan"><strong>Kesimpulan</strong></h2>
+<p>Komunikasi adalah <strong>cermin dari kematangan jiwa.</strong> Sebagaimana saya tulis dalam <em>My Shape</em>, saya mungkin bukan yang paling hebat, tapi saya selalu berusaha memahami. Kekuatan saya terletak di antara <strong>pedang logika dan kehangatan manusia.</strong></p>
 </section>
 <section id="referensi-kontekstual" class="level2">
 <h2 class="anchored" data-anchor-id="referensi-kontekstual"><strong>Referensi Kontekstual</strong></h2>
@@ -452,6 +487,19 @@ di antara <strong>pedang logika dan kehangatan manusia.</strong></p>
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -523,7 +571,7 @@ di antara <strong>pedang logika dan kehangatan manusia.</strong></p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/daffari\.github\.io\/all-about-me\/");
+        var filterRegex = new RegExp("https:\/\/jackund25\.github\.io\/all-about-me\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -855,4 +903,5 @@ di antara <strong>pedang logika dan kehangatan manusia.</strong></p>
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

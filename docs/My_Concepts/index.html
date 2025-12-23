@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jackund25">
 
-<title>index – Daffari Adiyatma — All About Me</title>
+<title>UAS-1 My Concepts – Daffari Adiyatma — All About Me</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-203c05c04b54dbe261474da57f29730d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +73,204 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -93,55 +290,74 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../All_About_me/index.html"> 
-<span class="menu-text">UTS-1 All About Me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Song_for_You/index.html"> 
-<span class="menu-text">UTS-2 Song for You</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Stories_for_You/index.html"> 
-<span class="menu-text">UTS-3 My Stories for You</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Shapes/index.html"> 
-<span class="menu-text">UTS-4 My Shape</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Personal_Reviews/index.html"> 
-<span class="menu-text">UTS-5 My Personal Reviews</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">UAS</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uts-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">UTS Projects</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-uas">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-uts-projects">    
+        <li>
+    <a class="dropdown-item" href="../All_About_me/index.html">
+ <span class="dropdown-text">UTS-1: All About Me</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Song_for_You/index.html">
+ <span class="dropdown-text">UTS-2: Song for You</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Stories_for_You/index.html">
+ <span class="dropdown-text">UTS-3: My Stories for You</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Shapes/index.html">
+ <span class="dropdown-text">UTS-4: My Shape</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Personal_Reviews/index.html">
+ <span class="dropdown-text">UTS-5: My Personal Reviews</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uas-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">UAS Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-uas-projects">    
         <li>
     <a class="dropdown-item" href="../My_Concepts/index.html">
- <span class="dropdown-text">My Concepts</span></a>
+ <span class="dropdown-text">UAS-1: My Concepts</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Opinions/index.html">
- <span class="dropdown-text">My Opinions</span></a>
+ <span class="dropdown-text">UAS-2: My Opinions</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Innovations/index.html">
- <span class="dropdown-text">My Innovations</span></a>
+ <span class="dropdown-text">UAS-3: My Innovations</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Knowledge/index.html">
- <span class="dropdown-text">My Knowledge</span></a>
+ <span class="dropdown-text">UAS-4: My Knowledge</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Professional_Reviews/index.html">
- <span class="dropdown-text">My Professional Reviews</span></a>
+ <span class="dropdown-text">UAS-5: My Professional Reviews</span></a>
   </li>  
     </ul>
   </li>
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jackund25"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -155,28 +371,112 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#uas-1-my-concepts" id="toc-uas-1-my-concepts" class="nav-link active" data-scroll-target="#uas-1-my-concepts">UAS-1 My Concepts</a></li>
+  <li><a href="#my-concepts-harmoni-ai-sentris" id="toc-my-concepts-harmoni-ai-sentris" class="nav-link active" data-scroll-target="#my-concepts-harmoni-ai-sentris">My Concepts: Harmoni AI-Sentris</a>
+  <ul class="collapse">
+  <li><a href="#filosofi-dan-arsitektur-sistem-tise-framework" id="toc-filosofi-dan-arsitektur-sistem-tise-framework" class="nav-link" data-scroll-target="#filosofi-dan-arsitektur-sistem-tise-framework">1. Filosofi dan Arsitektur Sistem (TISE Framework)</a>
+  <ul class="collapse">
+  <li><a href="#a.-lapisan-aplikasi-empowering-stakeholders" id="toc-a.-lapisan-aplikasi-empowering-stakeholders" class="nav-link" data-scroll-target="#a.-lapisan-aplikasi-empowering-stakeholders">a. Lapisan Aplikasi (Empowering Stakeholders)</a></li>
+  <li><a href="#b.-lapisan-sistem-the-vehicle-of-peace" id="toc-b.-lapisan-sistem-the-vehicle-of-peace" class="nav-link" data-scroll-target="#b.-lapisan-sistem-the-vehicle-of-peace">b. Lapisan Sistem (The Vehicle of Peace)</a></li>
+  <li><a href="#c.-lapisan-teknologi-fundamental-the-core-engine" id="toc-c.-lapisan-teknologi-fundamental-the-core-engine" class="nav-link" data-scroll-target="#c.-lapisan-teknologi-fundamental-the-core-engine">c.&nbsp;Lapisan Teknologi &amp; Fundamental (The Core Engine)</a></li>
+  </ul></li>
+  <li><a href="#logika-kekuatan-rekayasa-k-b" id="toc-logika-kekuatan-rekayasa-k-b" class="nav-link" data-scroll-target="#logika-kekuatan-rekayasa-k-b">2. Logika Kekuatan Rekayasa (<span class="math inline">\(K &gt; B\)</span>)</a></li>
+  <li><a href="#otak-sistem-sinkronisasi-kecerdasan-triune" id="toc-otak-sistem-sinkronisasi-kecerdasan-triune" class="nav-link" data-scroll-target="#otak-sistem-sinkronisasi-kecerdasan-triune">3. Otak Sistem: Sinkronisasi Kecerdasan Triune</a></li>
+  <li><a href="#mesin-inti-pengelolaan-energi-kemanusiaan" id="toc-mesin-inti-pengelolaan-energi-kemanusiaan" class="nav-link" data-scroll-target="#mesin-inti-pengelolaan-energi-kemanusiaan">4. Mesin Inti: Pengelolaan Energi Kemanusiaan</a></li>
+  <li><a href="#esensi-self-fulfilling-prophecy" id="toc-esensi-self-fulfilling-prophecy" class="nav-link" data-scroll-target="#esensi-self-fulfilling-prophecy">5. Esensi: Self-Fulfilling Prophecy</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">UAS-1 My Concepts</h1>
+<p class="subtitle lead">Digital Peacekeeping: Rekayasa Sistem Orkestrasi Kecerdasan Triune untuk Resolusi Konflik Global</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="uas-1-my-concepts" class="level1">
-<h1>UAS-1 My Concepts</h1>
-<p>Mau hidup epik ? <a href="lifestory.pdf">Write your Life Story</a></p>
-<p>Apa itu berkonsep?</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/QVfUlVBO80U?si=yM6q_rwV9rcDBbu7" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jackund25 </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="my-concepts-harmoni-ai-sentris" class="level1">
+<h1>My Concepts: Harmoni AI-Sentris</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/concept_illustration.png" class="img-fluid figure-img"></p>
+<figcaption>Konsep Arsitektur Digital Peacekeeping: Tiga lapisan sistem (Aplikasi, Sistem, Teknologi) dengan Core Engine yang menghubungkan Ni, AI, dan CI.</figcaption>
+</figure>
+</div>
+<section id="filosofi-dan-arsitektur-sistem-tise-framework" class="level2">
+<h2 class="anchored" data-anchor-id="filosofi-dan-arsitektur-sistem-tise-framework">1. Filosofi dan Arsitektur Sistem (TISE Framework)</h2>
+<p>Konsep ini tidak dibangun sebagai aplikasi tunggal, melainkan sebuah <strong>“Kendaraan Rekayasa”</strong> yang dirancang secara sistematis melalui tiga lapisan fundamental Arsitektur TISE (<em>Technological &amp; Information System Engineering</em>):</p>
+<section id="a.-lapisan-aplikasi-empowering-stakeholders" class="level3">
+<h3 class="anchored" data-anchor-id="a.-lapisan-aplikasi-empowering-stakeholders">a. Lapisan Aplikasi (Empowering Stakeholders)</h3>
+<p>Kita mengubah paradigma masyarakat dari sekadar “objek perang” menjadi <strong>“Protagonis-Penulis”</strong> dari narasi perdamaian mereka sendiri. Melalui platform komunikasi publik yang terdesentralisasi, 8 miliar manusia dapat melaporkan kondisi <em>real-time</em>, memvalidasi informasi, dan membangun komunitas lintas batas yang menolak narasi kebencian secara kolektif.</p>
+</section>
+<section id="b.-lapisan-sistem-the-vehicle-of-peace" class="level3">
+<h3 class="anchored" data-anchor-id="b.-lapisan-sistem-the-vehicle-of-peace">b. Lapisan Sistem (The Vehicle of Peace)</h3>
+<p>Sistem ini berfungsi sebagai “Kendaraan” yang secara otomatis menjalankan siklus <strong>PUDAL</strong> (Pantau, Ukur, Diagnosis, Aksi, Lapor): * <strong>Pantau &amp; Ukur:</strong> Mendeteksi anomali komunikasi dan eskalasi retorika perang di media digital. * <strong>Diagnosis:</strong> Membedakan aspirasi politik sah dengan disinformasi pemicu kekerasan. * <strong>Aksi:</strong> Meluncurkan “Repertoar Komunikasi”—persediaan narasi damai dan bantuan logistik darurat.</p>
+</section>
+<section id="c.-lapisan-teknologi-fundamental-the-core-engine" class="level3">
+<h3 class="anchored" data-anchor-id="c.-lapisan-teknologi-fundamental-the-core-engine">c.&nbsp;Lapisan Teknologi &amp; Fundamental (The Core Engine)</h3>
+<p>Mengembangkan instrumen <em>Natural Language Processing</em> (NLP) canggih untuk <strong>“Negosiasi Makna”</strong> lintas budaya. Mesin ini memahami nuansa bahasa dan emosi untuk menerjemahkan pesan antar-pihak bertikai tanpa distorsi “kebisingan” (<em>noise</em>) yang memicu salah paham fatal.</p>
+</section>
+</section>
+<section id="logika-kekuatan-rekayasa-k-b" class="level2">
+<h2 class="anchored" data-anchor-id="logika-kekuatan-rekayasa-k-b">2. Logika Kekuatan Rekayasa (<span class="math inline">\(K &gt; B\)</span>)</h2>
+<p>Keberhasilan de-eskalasi konflik bergantung pada hukum kesetimbangan tenaga: * <strong>Beban Masalah [B]:</strong> Konflik dan perang yang memengaruhi ~2 miliar jiwa (25% populasi global) dan 122,6 juta pengungsi. * <strong>Kekuatan Rekayasa [K]:</strong> Sinergi sistem informasi global, pemrosesan data masif AI, dan empati kolektif manusia. * <strong>Logika:</strong> Dengan menghimpun kekuatan teknologi cerdas yang melampaui beban masalahnya (<span class="math inline">\(K &gt; B\)</span>), sistem ini mampu mengangkat derajat kemanusiaan dari kehancuran fisik menuju stabilitas komunikasi.</p>
+</section>
+<section id="otak-sistem-sinkronisasi-kecerdasan-triune" class="level2">
+<h2 class="anchored" data-anchor-id="otak-sistem-sinkronisasi-kecerdasan-triune">3. Otak Sistem: Sinkronisasi Kecerdasan Triune</h2>
+<p>Sistem ini dikendalikan oleh tiga pilar kecerdasan yang saling mengawasi untuk mencegah politisasi: 1. <strong>Ni (Natural Intelligence):</strong> Empati dan kebijakan manusia (ahli resolusi konflik) untuk memastikan teknologi tetap manusiawi. 2. <strong>AI (Artificial Intelligence):</strong> “Juru Tulis Cerdas” untuk penalaran logis, pemetaan logistik pengungsi, dan analisis data objektif. 3. <strong>CI (Collective Intelligence):</strong> Norma sosial dan validasi komunitas global sebagai “Superego” digital untuk menyaring bias politik.</p>
+</section>
+<section id="mesin-inti-pengelolaan-energi-kemanusiaan" class="level2">
+<h2 class="anchored" data-anchor-id="mesin-inti-pengelolaan-energi-kemanusiaan">4. Mesin Inti: Pengelolaan Energi Kemanusiaan</h2>
+<p>Operasional sistem ditenagai oleh pengelolaan energi 8 miliar manusia (<em>Human Energon</em>) secara holistik melalui <strong>CORE Engine</strong>: * <strong>AQ (Hati):</strong> Ketahanan mental masyarakat menghadapi krisis. * <strong>PI-A (Pikiran):</strong> Penalaran logis AI mencari solusi teknis de-eskalasi. * <strong>PSKVE (Tenaga):</strong> Memastikan solusi menyediakan Produk, Layanan, Pengetahuan, dan Nilai yang berkelanjutan bagi korban konflik.</p>
+</section>
+<section id="esensi-self-fulfilling-prophecy" class="level2">
+<h2 class="anchored" data-anchor-id="esensi-self-fulfilling-prophecy">5. Esensi: Self-Fulfilling Prophecy</h2>
+<p>Tujuan akhir sistem adalah menciptakan <strong>“Self-Fulfilling Prophecy”</strong> (Ramalan yang Memenuhi Diri Sendiri) yang positif. Dengan memvisualisasikan data perdamaian yang transparan, kita mengubah <strong>Prospek</strong> (prediksi masa depan) masyarakat dari ketakutan menjadi harapan, sehingga menggerakkan aksi komunikasi</p>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -248,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/daffari\.github\.io\/all-about-me\/");
+        var filterRegex = new RegExp("https:\/\/jackund25\.github\.io\/all-about-me\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -580,4 +880,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

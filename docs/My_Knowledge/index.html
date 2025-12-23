@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jackund25">
 
-<title>index – Daffari Adiyatma — All About Me</title>
+<title>UAS-4 My Knowledge – Daffari Adiyatma — All About Me</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e31584831b205ffbb2d98406f31c2a5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-203c05c04b54dbe261474da57f29730d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +73,204 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -93,55 +290,74 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../All_About_me/index.html"> 
-<span class="menu-text">UTS-1 All About Me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Song_for_You/index.html"> 
-<span class="menu-text">UTS-2 Song for You</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Stories_for_You/index.html"> 
-<span class="menu-text">UTS-3 My Stories for You</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Shapes/index.html"> 
-<span class="menu-text">UTS-4 My Shape</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../My_Personal_Reviews/index.html"> 
-<span class="menu-text">UTS-5 My Personal Reviews</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">UAS</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uts-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">UTS Projects</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-uas">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-uts-projects">    
+        <li>
+    <a class="dropdown-item" href="../All_About_me/index.html">
+ <span class="dropdown-text">UTS-1: All About Me</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Song_for_You/index.html">
+ <span class="dropdown-text">UTS-2: Song for You</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Stories_for_You/index.html">
+ <span class="dropdown-text">UTS-3: My Stories for You</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Shapes/index.html">
+ <span class="dropdown-text">UTS-4: My Shape</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../My_Personal_Reviews/index.html">
+ <span class="dropdown-text">UTS-5: My Personal Reviews</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-uas-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">UAS Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-uas-projects">    
         <li>
     <a class="dropdown-item" href="../My_Concepts/index.html">
- <span class="dropdown-text">My Concepts</span></a>
+ <span class="dropdown-text">UAS-1: My Concepts</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Opinions/index.html">
- <span class="dropdown-text">My Opinions</span></a>
+ <span class="dropdown-text">UAS-2: My Opinions</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Innovations/index.html">
- <span class="dropdown-text">My Innovations</span></a>
+ <span class="dropdown-text">UAS-3: My Innovations</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Knowledge/index.html">
- <span class="dropdown-text">My Knowledge</span></a>
+ <span class="dropdown-text">UAS-4: My Knowledge</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../My_Professional_Reviews/index.html">
- <span class="dropdown-text">My Professional Reviews</span></a>
+ <span class="dropdown-text">UAS-5: My Professional Reviews</span></a>
   </li>  
     </ul>
   </li>
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/jackund25"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -155,26 +371,218 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#uas-4-my-knowledge" id="toc-uas-4-my-knowledge" class="nav-link active" data-scroll-target="#uas-4-my-knowledge">UAS-4 My Knowledge</a></li>
+  <li><a href="#my-knowledge-engineering-for-resilience" id="toc-my-knowledge-engineering-for-resilience" class="nav-link active" data-scroll-target="#my-knowledge-engineering-for-resilience">My Knowledge: Engineering for Resilience</a>
+  <ul class="collapse">
+  <li><a href="#pengantar-coding-untuk-survival" id="toc-pengantar-coding-untuk-survival" class="nav-link" data-scroll-target="#pengantar-coding-untuk-survival">1. Pengantar: Coding untuk Survival</a></li>
+  <li><a href="#part-1-prinsip-dasar-crisis-tech-design" id="toc-part-1-prinsip-dasar-crisis-tech-design" class="nav-link" data-scroll-target="#part-1-prinsip-dasar-crisis-tech-design">2. Part 1: Prinsip Dasar Crisis-Tech Design</a>
+  <ul class="collapse">
+  <li><a href="#prinsip-1-local-first-delay-tolerant-networks-dtn" id="toc-prinsip-1-local-first-delay-tolerant-networks-dtn" class="nav-link" data-scroll-target="#prinsip-1-local-first-delay-tolerant-networks-dtn">2.1 Prinsip 1: Local-First &amp; Delay-Tolerant Networks (DTN)</a></li>
+  <li><a href="#prinsip-2-design-for-digital-famine-low-bandwidth" id="toc-prinsip-2-design-for-digital-famine-low-bandwidth" class="nav-link" data-scroll-target="#prinsip-2-design-for-digital-famine-low-bandwidth">2.2 Prinsip 2: Design for “Digital Famine” (Low Bandwidth)</a></li>
+  <li><a href="#prinsip-3-trust-no-one-zero-trust-architecture" id="toc-prinsip-3-trust-no-one-zero-trust-architecture" class="nav-link" data-scroll-target="#prinsip-3-trust-no-one-zero-trust-architecture">2.3 Prinsip 3: Trust No One (Zero-Trust Architecture)</a></li>
+  </ul></li>
+  <li><a href="#part-2-common-pitfalls-jebakan-mematikan" id="toc-part-2-common-pitfalls-jebakan-mematikan" class="nav-link" data-scroll-target="#part-2-common-pitfalls-jebakan-mematikan">3. Part 2: Common Pitfalls (Jebakan Mematikan)</a>
+  <ul class="collapse">
+  <li><a href="#pitfall-1-battery-vampire" id="toc-pitfall-1-battery-vampire" class="nav-link" data-scroll-target="#pitfall-1-battery-vampire">3.1 Pitfall 1: “Battery Vampire”</a></li>
+  <li><a href="#pitfall-2-ketergantungan-pada-api-pihak-ketiga" id="toc-pitfall-2-ketergantungan-pada-api-pihak-ketiga" class="nav-link" data-scroll-target="#pitfall-2-ketergantungan-pada-api-pihak-ketiga">3.2 Pitfall 2: Ketergantungan pada API Pihak Ketiga</a></li>
+  </ul></li>
+  <li><a href="#part-3-evaluation-checklist" id="toc-part-3-evaluation-checklist" class="nav-link" data-scroll-target="#part-3-evaluation-checklist">4. Part 3: Evaluation Checklist</a>
+  <ul class="collapse">
+  <li><a href="#resilience-checklist" id="toc-resilience-checklist" class="nav-link" data-scroll-target="#resilience-checklist">4.1 Resilience Checklist</a></li>
+  <li><a href="#security-checklist" id="toc-security-checklist" class="nav-link" data-scroll-target="#security-checklist">4.2 Security Checklist</a></li>
+  </ul></li>
+  <li><a href="#part-4-real-world-case-studies" id="toc-part-4-real-world-case-studies" class="nav-link" data-scroll-target="#part-4-real-world-case-studies">5. Part 4: Real-World Case Studies</a>
+  <ul class="collapse">
+  <li><a href="#good-example-bridgefy-hong-kong-protests" id="toc-good-example-bridgefy-hong-kong-protests" class="nav-link" data-scroll-target="#good-example-bridgefy-hong-kong-protests">5.1 Good Example: Bridgefy (Hong Kong Protests)</a></li>
+  <li><a href="#bad-example-apps-yang-heavy-online" id="toc-bad-example-apps-yang-heavy-online" class="nav-link" data-scroll-target="#bad-example-apps-yang-heavy-online">5.2 Bad Example: Apps yang “Heavy-Online”</a></li>
+  </ul></li>
+  <li><a href="#conclusion-knowledge-as-a-shield" id="toc-conclusion-knowledge-as-a-shield" class="nav-link" data-scroll-target="#conclusion-knowledge-as-a-shield">6. Conclusion: Knowledge as a Shield</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">UAS-4 My Knowledge</h1>
+<p class="subtitle lead">Engineering for Resilience: Panduan Desain Teknologi di Zona Krisis</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="uas-4-my-knowledge" class="level2">
-<h2 class="anchored" data-anchor-id="uas-4-my-knowledge">UAS-4 My Knowledge</h2>
-<p>Cara saya mengkomunikasikan sebuah pengatahuan sebagai petunjuk bagi orang lain 1) saya tulis <a href="Rekomendasi Presentasi Efektif(Contoh Makalah).pdf">makalah sebagai bahan utama</a> 2) lalu saya buat <a href="Contoh Transkrip Presentasi.pdf">transkrip ucapan lisan</a> 3) kemudian saya kembangkan <a href="Rekomendasi Presentasi (Contoh Slides).pdf">slide pendukung trnsskrip</a> 4) lalu saya memproduksivideo audio visual </p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ZbghfMvnPZc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ZbghfMvnPZc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jackund25 </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="my-knowledge-engineering-for-resilience" class="level1">
+<h1>My Knowledge: Engineering for Resilience</h1>
+<p><strong>Panduan Praktis Membangun Teknologi yang Bertahan Saat Infrastruktur Runtuh</strong></p>
+<section id="pengantar-coding-untuk-survival" class="level2">
+<h2 class="anchored" data-anchor-id="pengantar-coding-untuk-survival">1. Pengantar: Coding untuk Survival</h2>
+<p>Dokumen ini adalah <em>public knowledge sharing</em> tentang bagaimana merancang sistem teknologi yang tetap beroperasi di lingkungan ekstrim (zona perang, bencana alam, atau blackout total).</p>
+<p><strong>Target Audience:</strong> * <strong>Humanitarian Developers:</strong> Yang ingin membangun alat bantu digital. * <strong>Network Engineers:</strong> Yang merancang infrastruktur darurat. * <strong>Mahasiswa IT:</strong> Yang ingin riset topik <em>Disaster Recovery</em>.</p>
+<p><strong>Apa yang akan Anda pelajari:</strong> 1. Prinsip arsitektur <em>Decentralized &amp; Delay-Tolerant</em>. 2. Optimasi <em>Low-Bandwidth</em> untuk jaringan 2G/Mesh. 3. Checklist keamanan untuk <em>High-Risk Environment</em>.</p>
+<hr>
+</section>
+<section id="part-1-prinsip-dasar-crisis-tech-design" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-prinsip-dasar-crisis-tech-design">2. Part 1: Prinsip Dasar Crisis-Tech Design</h2>
+<p>Berbeda dengan aplikasi komersial (Gojek/Tokopedia) yang berasumsi internet stabil dan server pusat selalu <em>up</em>, Crisis-Tech harus berasumsi <strong>semuanya akan gagal</strong>.</p>
+<section id="prinsip-1-local-first-delay-tolerant-networks-dtn" class="level3">
+<h3 class="anchored" data-anchor-id="prinsip-1-local-first-delay-tolerant-networks-dtn">2.1 Prinsip 1: Local-First &amp; Delay-Tolerant Networks (DTN)</h3>
+<section id="apa-artinya" class="level4">
+<h4 class="anchored" data-anchor-id="apa-artinya">2.1.1 Apa Artinya?</h4>
+<p>Jangan pernah mendesain aplikasi yang “blank” saat tidak ada internet. Aplikasi harus berfungsi penuh secara lokal, dan menganggap koneksi internet hanya sebagai bonus sesekali.</p>
+</section>
+<section id="the-technical-shift" class="level4">
+<h4 class="anchored" data-anchor-id="the-technical-shift">2.1.2 The Technical Shift</h4>
+<ul>
+<li><strong>Commercial Model:</strong> Request <span class="math inline">\(\rightarrow\)</span> Server Processing <span class="math inline">\(\rightarrow\)</span> Response. (Gagal jika server mati).</li>
+<li><strong>Crisis Model:</strong> Store Locally <span class="math inline">\(\rightarrow\)</span> Queue <span class="math inline">\(\rightarrow\)</span> Hop-to-Neighbor <span class="math inline">\(\rightarrow\)</span> Eventually Sync.</li>
+</ul>
+</section>
+<section id="how-to-apply-pseudo-code" class="level4">
+<h4 class="anchored" data-anchor-id="how-to-apply-pseudo-code">2.1.3 How to Apply (Pseudo-Code)</h4>
+<p>Gunakan pola <strong>Store-and-Forward</strong>.</p>
+<p>```javascript // Bad Practice (Commercial Style) async function sendSOS(message) { try { await server.post(‘/api/sos’, message); // Gagal total jika offline alert(“Sent!”); } catch (e) { alert(“Error: No Internet”); // User mati kutu } }</p>
+<p>// Good Practice (Crisis Style) function sendSOS(message) { // 1. Simpan ke Local Storage (SQLite/Realm) localDB.save(‘outbox’, message);</p>
+<p>// 2. Beri Feedback Positif Dulu (Optimistic UI) ui.showStatus(“Pesan Diamankan. Mencari node…”);</p>
+<p>// 3. Coba kirim via Mesh (Bluetooth/WiFi Direct) meshNetwork.broadcast(message);</p>
+<p>// 4. Queue untuk Internet sync jika nanti ada sinyal backgroundSync.register(‘sync_sos’, message); }</p>
+</section>
+</section>
+<section id="prinsip-2-design-for-digital-famine-low-bandwidth" class="level3">
+<h3 class="anchored" data-anchor-id="prinsip-2-design-for-digital-famine-low-bandwidth">2.2 Prinsip 2: Design for “Digital Famine” (Low Bandwidth)</h3>
+<section id="apa-artinya-1" class="level4">
+<h4 class="anchored" data-anchor-id="apa-artinya-1">2.2.1 Apa Artinya?</h4>
+<p>Di zona krisis, bandwidth adalah emas. Jangan kirim data dalam format JSON yang “bengkak” atau gambar resolusi tinggi. Desain protokol komunikasi harus sehemat mungkin (<em>Byte-level optimization</em>).</p>
+</section>
+<section id="the-math" class="level4">
+<h4 class="anchored" data-anchor-id="the-math">2.2.2 The Math</h4>
+<ul>
+<li><strong>4G Normal:</strong> ~10 Mbps.</li>
+<li><strong>Crisis/Satellite Edge:</strong> 1-5 Kbps (Seribu kali lebih lambat).</li>
+<li><strong>Implikasi:</strong> Aplikasi modern biasa akan <em>timeout</em> dan gagal total.</li>
+</ul>
+</section>
+<section id="how-to-apply" class="level4">
+<h4 class="anchored" data-anchor-id="how-to-apply">2.2.3 How to Apply</h4>
+<p>Gunakan kompresi biner (seperti Protobuf atau MessagePack) daripada JSON teks biasa untuk pengiriman data.</p>
+<p><strong>Perbandingan Payload:</strong></p>
+<ul>
+<li><p><strong>JSON (Boros - 85 Bytes):</strong> ```json {“type”: “sos”, “lat”: -6.200, “long”: 106.816, “status”: “critical”}</p></li>
+<li><p><strong>Binary/Bit-Packing (Hemat - 8 Bytes):</strong> <code>01 C018 42A1 03</code> (Representasi Hex)</p></li>
+</ul>
+<p>Menghemat 90% ukuran data berarti pesan memiliki peluang <strong>10x lebih besar</strong> untuk berhasil terkirim di jaringan yang macet atau tidak stabil.</p>
+</section>
+</section>
+<section id="prinsip-3-trust-no-one-zero-trust-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="prinsip-3-trust-no-one-zero-trust-architecture">2.3 Prinsip 3: Trust No One (Zero-Trust Architecture)</h3>
+<section id="apa-artinya-2" class="level4">
+<h4 class="anchored" data-anchor-id="apa-artinya-2">2.3.1 Apa Artinya?</h4>
+<p>Di zona konflik, server fisik bisa disita musuh, atau <em>node</em> tetangga bisa jadi mata-mata. Jangan percayakan keamanan pada server pusat semata. Keamanan harus melekat pada <strong>data itu sendiri</strong> (<em>End-to-End Encryption</em>).</p>
+</section>
+<section id="implementasi" class="level4">
+<h4 class="anchored" data-anchor-id="implementasi">2.3.2 Implementasi</h4>
+<ul>
+<li><strong>Enkripsi:</strong> Gunakan kunci privat yang tersimpan di perangkat pengguna, bukan di server.</li>
+<li><strong>Anonimitas:</strong> Samarkan metadata lokasi agar pengguna tidak bisa dilacak oleh pihak yang bermusuhan.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="part-2-common-pitfalls-jebakan-mematikan" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-common-pitfalls-jebakan-mematikan">3. Part 2: Common Pitfalls (Jebakan Mematikan)</h2>
+<section id="pitfall-1-battery-vampire" class="level3">
+<h3 class="anchored" data-anchor-id="pitfall-1-battery-vampire">3.1 Pitfall 1: “Battery Vampire”</h3>
+<p><strong>The Mistake:</strong> Aplikasi terus-menerus memindai GPS dan Bluetooth di <em>background</em> untuk mencari sinyal. <strong>The Reality:</strong> Di zona perang, listrik mati dan genset langka. HP adalah penyambung nyawa. Jika aplikasi Anda menghabiskan baterai dalam 2 jam, aplikasi itu akan segera di-<em>uninstall</em>. <strong>Solusi:</strong> Gunakan “Burst Sync”. Hanya nyalakan radio setiap 15-30 menit untuk sinkronisasi cepat, lalu kembali ke mode tidur (<em>deep sleep</em>).</p>
+</section>
+<section id="pitfall-2-ketergantungan-pada-api-pihak-ketiga" class="level3">
+<h3 class="anchored" data-anchor-id="pitfall-2-ketergantungan-pada-api-pihak-ketiga">3.2 Pitfall 2: Ketergantungan pada API Pihak Ketiga</h3>
+<p><strong>The Mistake:</strong> Menggunakan Google Maps API, Firebase Auth, atau layanan cloud pihak ketiga yang umum. <strong>The Reality:</strong> Pihak berwenang atau rezim bisa memblokir IP Google/AWS di negara tersebut (<em>Internet Shutdown/Censorship</em>). <strong>Solusi:</strong> * Gunakan peta vektor offline (seperti OpenStreetMap MBTiles) yang tertanam di aplikasi. * Gunakan autentikasi berbasis Kriptografi (Public/Private Key) lokal, bukan login email/medsos.</p>
+</section>
+</section>
+<section id="part-3-evaluation-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-evaluation-checklist">4. Part 3: Evaluation Checklist</h2>
+<p>Gunakan checklist ini sebelum merilis teknologi untuk keperluan kemanusiaan:</p>
+<section id="resilience-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="resilience-checklist">4.1 Resilience Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Offline-Capable:</strong> Apakah fungsi inti (Peta/Chat) jalan tanpa sinyal sama sekali?</label></li>
+<li><label><input type="checkbox"><strong>Interoperability:</strong> Apakah bisa jalan di Android versi lama (misal: Android 6) yang banyak dipakai di negara berkembang?</label></li>
+<li><label><input type="checkbox"><strong>Power Efficient:</strong> Apakah penggunaan baterai &lt;5% per jam saat <em>idle</em>?</label></li>
+<li><label><input type="checkbox"><strong>Small Footprint:</strong> Apakah ukuran APK &lt;20 MB? (Agar mudah disebar via Bluetooth/ShareIt).</label></li>
+</ul>
+</section>
+<section id="security-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="security-checklist">4.2 Security Checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>E2EE (End-to-End Encryption):</strong> Apakah pesan dienkripsi dari pengirim ke penerima?</label></li>
+<li><label><input type="checkbox"><strong>Metadata Protection:</strong> Apakah lokasi pengguna disamarkan (<em>obfuscated</em>)?</label></li>
+<li><label><input type="checkbox"><strong>Panic Button:</strong> Apakah ada fitur “Wipe Data” instan jika HP disita?</label></li>
+</ul>
+</section>
+</section>
+<section id="part-4-real-world-case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-real-world-case-studies">5. Part 4: Real-World Case Studies</h2>
+<section id="good-example-bridgefy-hong-kong-protests" class="level3">
+<h3 class="anchored" data-anchor-id="good-example-bridgefy-hong-kong-protests">5.1 Good Example: Bridgefy (Hong Kong Protests)</h3>
+<ul>
+<li><strong>What:</strong> Aplikasi pesan offline berbasis Bluetooth Mesh.</li>
+<li><strong>Why it worked:</strong> Saat pemerintah mematikan internet, demonstran tetap bisa berkoordinasi secara <em>peer-to-peer</em> menggunakan jaringan antar-HP.</li>
+<li><strong>Lesson:</strong> Desentralisasi adalah kunci perlawanan sipil dan ketahanan bencana.</li>
+</ul>
+</section>
+<section id="bad-example-apps-yang-heavy-online" class="level3">
+<h3 class="anchored" data-anchor-id="bad-example-apps-yang-heavy-online">5.2 Bad Example: Apps yang “Heavy-Online”</h3>
+<ul>
+<li><strong>What:</strong> Banyak aplikasi bantuan bencana yang mewajibkan login Facebook/Google saat pertama dibuka.</li>
+<li><strong>Why it failed:</strong> Saat bencana terjadi, menara seluler seringkali roboh pertama kali. User tidak bisa login, sehingga aplikasi tidak bisa digunakan sama sekali untuk meminta tolong.</li>
+<li><strong>Lesson:</strong> Identitas harus bersifat lokal (<em>Local Identity</em>), bukan bergantung pada cloud.</li>
+</ul>
+</section>
+</section>
+<section id="conclusion-knowledge-as-a-shield" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-knowledge-as-a-shield">6. Conclusion: Knowledge as a Shield</h2>
+<p>Mengembangkan teknologi untuk zona nyaman itu mudah. Mengembangkan teknologi untuk tempat di mana “Error 404” berarti kematian, itu membutuhkan <em>mindset</em> yang sepenuhnya berbeda.</p>
+<p>Prinsip-prinsip ini—<strong>Local-First, Low-Bandwidth, Zero-Trust</strong>—bukan hanya teori teknis, tapi etika moral <em>developer</em> dalam melindungi nyawa pengguna.</p>
+<p><strong>“Code like lives depend on it. Because they do.”</strong></p>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -246,7 +654,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/daffari\.github\.io\/all-about-me\/");
+        var filterRegex = new RegExp("https:\/\/jackund25\.github\.io\/all-about-me\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -578,4 +986,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -1,47 +1,72 @@
 /* === GLOBAL STYLING FOR DAFFARI WEBSITE === */
 
-/* Font dan warna dasar */
+/* 1. VARIABEL WARNA DINAMIS (Light & Dark Mode) */
+:root {
+  /* Default (Light Mode) */
+  --bg-color: linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  --text-color: #2b2b2b;
+  --primary-color: #004aad;
+  --accent-color: #0074e4;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --toc-bg: #f3f7fd;
+  --footer-bg: #f9fbff;
+  --border-color: #ddd;
+}
+
+/* Override saat Dark Mode Aktif */
+[data-bs-theme="dark"] {
+  --bg-color: #1a1a1a;        /* Background gelap */
+  --text-color: #e0e0e0;      /* Teks terang */
+  --primary-color: #5dade2;   /* Biru lebih muda agar kontras */
+  --accent-color: #85c1e9;
+  --card-bg: #222222;         /* Kartu abu gelap */
+  --shadow: rgba(0, 0, 0, 0.5);
+  --toc-bg: #2c2c2c;
+  --footer-bg: #1f1f1f;
+  --border-color: #444;
+}
+
+/* 2. BODY & FONT */
 body {
-  background: linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  background: var(--bg-color); /* Menggunakan variabel dinamis */
+  color: var(--text-color);
   font-family: 'Poppins', 'Segoe UI', sans-serif;
-  color: #2b2b2b;
   line-height: 1.7;
   font-size: 1rem;
   margin: 0;
+  padding-top: 100px !important; /* Agar tidak tertutup navbar */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Warna utama & aksen */
-:root {
-  --primary-color: #004aad;
-  --accent-color: #0074e4;
-  --light-bg: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-}
-
-/* Navbar Quarto */
+/* 3. NAVBAR */
 .navbar {
-  background-color: var(--primary-color) !important;
+  /* Tetap biru tua di kedua mode agar konsisten */
+  background-color: #004aad !important; 
   box-shadow: 0 2px 10px var(--shadow);
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #fff !important;
+  color: #fff !important; /* Teks navbar selalu putih */
   font-weight: 500;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--accent-color) !important;
+  color: #85c1e9 !important; /* Biru muda saat hover */
 }
 
-/* Headings */
+/* 4. HEADINGS & LINKS */
 h1, h2, h3, h4 {
   color: var(--primary-color);
   font-weight: 600;
   margin-top: 1.8em;
 }
 
-/* Link */
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -52,66 +77,57 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Gambar dan figure */
+/* 5. CARD & CONTENT SECTIONS */
+section, .content {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 25px var(--shadow);
+  border: 1px solid var(--border-color); /* Tambah border tipis */
+}
+
+/* 6. TOC SIDEBAR */
+#TOC {
+  background: var(--toc-bg);
+  border-left: 4px solid var(--primary-color);
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+/* 7. FOOTER */
+footer {
+  text-align: center;
+  color: var(--text-color);
+  padding: 25px;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+  background: var(--footer-bg);
+}
+
+/* 8. IMAGES & FIGURES */
 .quarto-figure img {
   border-radius: 10px;
   box-shadow: 0 4px 20px var(--shadow);
   transition: transform 0.2s ease;
+  width: 80%;
+  max-width: 750px;
+  margin: 25px auto;
+  display: block;
 }
 
 .quarto-figure img:hover {
   transform: scale(1.03);
 }
 
-/* Card-like sections */
-section, .content {
-  background: var(--light-bg);
-  border-radius: 15px;
-  padding: 25px 30px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 25px var(--shadow);
-}
-
-/* TOC sidebar */
-#TOC {
-  background: #f3f7fd;
-  border-left: 4px solid var(--primary-color);
-  padding-left: 10px;
-  border-radius: 10px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  color: #555;
-  padding: 25px;
-  font-size: 0.9rem;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
-  background: #f9fbff;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  section, .content {
-    padding: 15px 18px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .navbar-brand {
-    font-size: 1rem;
-  }
-}
-
-/* === Responsive YouTube Embed === */
+/* 9. YOUTUBE EMBED RESPONSIVE */
 iframe {
   display: block;
   margin: 25px auto;
   border-radius: 12px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 25px var(--shadow);
   max-width: 100%;
 }
 
@@ -123,85 +139,31 @@ iframe {
   }
 }
 
-/* === Image Styling for Stories === */
-.quarto-figure img {
-  width: 80%;
-  max-width: 750px;
-  margin: 25px auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-}
-
-.quarto-figure img:hover {
-  transform: scale(1.03);
-}
-
-/* === Make Navbar Sticky (Always Visible) === */
-.navbar {
-  position: fixed !important;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  background: rgba(0, 74, 173, 0.95) !important;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 4px 20px var(--shadow);
-  transition: background 0.3s ease;
-}
-
-/* Disable Headroom hide-on-scroll behavior */
-.headroom--unpinned,
-.headroom--pinned,
-.headroom--not-top,
-.headroom--top {
-  transform: none !important;
-  transition: none !important;
-}
-
-body {
-  padding-top: 100px !important; /* ubah dari 70px ke 100px */
-}
-
-/* === Responsive & readable rubric tables === */
+/* 10. RESPONSIVE TABLES */
 .table-responsive {
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   margin: 0 auto 1.25rem auto;
 }
 
-/* Make tables fixed layout so columns don't explode */
 .table-responsive table {
-  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
 }
 
-/* Cells wrap text and break long words */
 .table-responsive th,
 .table-responsive td {
-  white-space: normal !important; /* allow wrapping */
+  white-space: normal !important;
   word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
   vertical-align: top;
   padding: 0.9rem 1rem;
+  color: var(--text-color);
+  border-color: var(--border-color); /* Garis tabel mengikuti tema */
 }
 
-/* Improve header appearance */
 .table-responsive thead th {
   text-align: left;
-  background: #f3f7fd;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  background: var(--toc-bg);
+  border-bottom: 2px solid var(--border-color);
+  color: var(--primary-color);
 }
-
-/* Small screens: slightly reduce padding */
-@media (max-width: 768px) {
-  .table-responsive th,
-  .table-responsive td {
-    padding: 0.6rem 0.6rem;
-    font-size: 0.95rem;
-  }
-}
-
