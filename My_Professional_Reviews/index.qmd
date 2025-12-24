@@ -1,5 +1,6 @@
 ---
-title: "UTS-5 My Personal Review – Refleksi Komunikasi Diri dan Relasi"
+title: "UAS-5 My Professional Reviews"
+subtitle: "Refleksi Dua Arah: Evaluasi Diri oleh AI & Penilaian Kritis Terhadap Kolega"
 format: html
 toc: true
 toc-depth: 3
@@ -8,4 +9,68 @@ execute:
   echo: false
 ---
 
-Untuk melAkukan review, seperti pada [pendekatan AI](../My_Personal_Reviews/Doc.5.Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf), kita membutuhkan rubrik
+# UAS-5: The Reviewer & The Reviewed
+
+---
+
+## 1. Pendahuluan: Metodologi Evaluasi
+
+Halaman ini mendokumentasikan proses evaluasi menyeluruh (360-degree review) untuk mata kuliah *Komunikasi Interpersonal dan Publik*. Evaluasi dilakukan dalam dua dimensi:
+
+1.  **Self-Assessment (AI-Powered):** Saya menggunakan *Artificial Intelligence* (Claude 3.5 Sonnet) untuk mengaudit karya saya sendiri secara objektif.
+2.  **Peer-Assessment (Human-Review):** Saya berperan sebagai evaluator untuk menilai dan mengkritisi karya dari tiga rekan sejawat saya (Yumna, Faizal, dan Daniel).
+
+Panduan penilaian yang digunakan mengacu pada standar rubrik resmi: **[📄 Panduan Evaluasi Esai Berdasarkan Rubrik](Mengevaluasi-Esai-Berdasarkan-Rubrik.pdf)**.
+
+---
+
+## 2. Dimensi 1: Self-Assessment (AI Audit)
+
+Pada tahap ini, saya menyerahkan seluruh draf UAS 1-4 saya kepada AI untuk dinilai. Tujuannya adalah mendapatkan umpan balik yang "dingin", logis, dan bebas dari bias subjektif saya sendiri.
+
+**Hasil Audit AI terhadap Karya Saya:**
+
+| Project | Topik | Skor AI | Predikat |
+| :--- | :--- | :---: | :--- |
+| **UAS-1** | **My Concepts** (Arsitektur TISE) | **15/20** | *Visionary but Abstract* |
+| **UAS-2** | **My Opinions** (Etika AI) | **19/20** | *Highly Persuasive* |
+| **UAS-3** | **My Innovations** (VeriPax) | **19/20** | *Mature Implementation* |
+| **UAS-4** | **My Knowledge** (Resilience) | **20/20** | *Perfect Execution* |
+
+### 💡 Insight Utama dari AI:
+AI menyoroti bahwa kekuatan utama saya adalah **eksekusi teknis dan pedagogi** (UAS-3 & UAS-4). Namun, AI memberikan kritik valid pada UAS-1, menyatakan bahwa konsep filosofis saya masih memerlukan bukti empiris (validitas) yang lebih kuat agar tidak sekadar menjadi teori di atas kertas.
+
+::: {.callout-note appearance="simple" icon=false}
+### 📂 Bukti Audit AI
+Detail lengkap kritik dan saran dari AI dapat dilihat di sini:
+[📄 **Laporan Audit AI Lengkap (PDF)**](hasil_asessment_ai.pdf)
+:::
+
+---
+
+## 3. Dimensi 2: Peer-Assessment (My Review of Others)
+
+Pada tahap ini, saya memposisikan diri sebagai evaluator profesional. Saya menilai karya tiga rekan saya.
+
+Proses ini melatih saya untuk melihat bagaimana ide yang sama (Digital Peacekeeping) dieksekusi dengan gaya berpikir yang berbeda-beda oleh orang lain.
+
+---
+
+## 4. Kesimpulan & Refleksi Akhir
+
+Melalui proses **"Dinilai oleh AI"** dan **"Menilai Rekan"**, saya menyadari satu hal penting:
+
+> *"Objektivitas itu sulit, tetapi pola selalu terlihat."*
+
+Ketika saya menilai teman-teman (Peer Assessment), saya cenderung mencari **bukti nyata dan kejelasan**. Ironisnya, itulah hal yang sama yang dikritik oleh AI terhadap karya UAS-1 saya sendiri.
+
+Proses ini mengajarkan saya bahwa sebagai *reviewer*, kita sering kali lebih jeli melihat kekurangan orang lain daripada kekurangan diri sendiri. Bantuan AI dalam *Self-Assessment* menjadi cermin yang jujur untuk menutupi *blind-spot* tersebut.
+
+---
+
+::: {.callout-tip appearance="simple"}
+**Transparansi Data:**
+Data mentah penilaian peer assessment yang saya lakukan dapat diunduh melalui tautan berikut:
+
+- [📥 UAS-5: My_Professional_Review](UAS-5_Skor.xlsx)
+:::
